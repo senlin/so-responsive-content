@@ -153,9 +153,9 @@ function sovc_render_form() { ?>
 		</ul>
 		
 		<p><?php _e( 'It is good to know that the only function of this "button" is to show you that the element behind it has one of the Visibility Classes.<br /> For the rest it does not do anything to your content; you can therefore see it as a "helper".', 'sovc' ); ?></p>
-		<p><?php _e( '', 'sovc' ); ?></p>
-		<p><?php _e( '', 'sovc' ); ?></p>
-		<p><?php _e( '', 'sovc' ); ?></p>
+		
+		<p><?php _e( 'You can use the Visibility Classes on virtually all elements: p, h1, h2, h3, h4, h5, h6, td, th, div, ul, ol, li, table and img.', 'sovc' ); ?></p>
+		<p><?php _e( 'Although possible, <strong>I strongly discourage</strong> using the classes with images. The reason is that the SO Visibility Classes plugin only uses media queries with <code>display: block;</code> and <code>display: none;</code>. If you were to add a large image to only show on large screens, a medium image to show on tablets and a small image to show on smart phones, then the person visiting your site using a phone has to download all 3 images, which can have a major impact on the data plan of the visitor!', 'sovc' ); ?></p>
 
 		<p style="margin-top: 15px;">
 			

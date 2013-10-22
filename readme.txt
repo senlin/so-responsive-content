@@ -11,49 +11,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 With the SO Visibility Classes plugin you can select classes from the Visual Editor to conditionally show elements for, or hide them from, certain browser widths.
 
 == Description ==
-Long description of this great plugin. No characters limit, and you can use markdown.
+With these classes it becomes very simple to show or hide content for these specific browser widths! As an example you can make the text on your "About" page much longer for people that visit your site using a large screen, whereas you show people on small(er) screens just the main points. On the other end of the spectrum you can make a telephone number only clickable (i.e. with a link that goes to the phone app of the device) for small screens, whereas for large screens you won't be needing a link there.
 
-= Background Info =
-The other day I was reading [an article over at wpmu.org](http://wpmu.org/is-responsive-design-holding-wordpress-back/) that asked the question whether the responsive design hype is perhaps killing the innovation in WordPress themes development.
+The SO Visibility Classes plugin adds a Styles drop down menu to the first line of the TinyMCE Editor. Once you have selected a visibility class, the plugin shows that in 3 locations: 
 
-To some extent I definitely agree that responsive should not be used as a one-size-fits-all solution. Personally I find it nice that a tablet version and a desktop version look more or less similar, but I wholeheartedly disagree that it should also look similar on smart phones and/or small tablets.
+1. as selected in the drop down menu
+2. with a "button" in front of the selector (the only function of this "button" is to show you that the element behind it has one of the Visibility Classes)
+3. in the path
 
-Currently theme developers still tend to work from big to small instead of embracing the [Mobile First](http://www.lukew.com/ff/entry.asp?933) approach.
-
-On [my own website](http://senlinonline.com), which I built with [Foundation 4](http://foundation.zurb.com), I show a lot less content on small screens than I do on "the big screen". Foundation 4 has very useful classes built in to "conditionally" show content depending on the width of the browser window.
-
-Naturally not everyone can build his or her website on Foundation, so that is the reason that I have developed the SO Visibility Classes plugin. I have taken similar classes as Foundation 4 has, but simplified things a little bit:
-
-* show/hide for small
-* show/hide for medium
-* show/hide for large
-
-*(Foundation actually uses show/hide for small, medium down, medium, medium up, large down, large, large up, xlarge)*
-
-At first I was thinking to use shortcodes that the user can then add to the content, but a comment on the article [Dealing with shortcode madness](http://justintadlock.com/archives/2011/05/02/dealing-with-shortcode-madness#comment-335205) changed my mind. Although written more than two years ago, the solution that [Jan Fabry](http://wordpress.stackexchange.com/users/8/jan-fabry) offers in his comment fortunately still works. 
-
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-markdown parsed.
-
-Ordered list:
-
-1. Some feature
-1. Another feature
-1. Something else about the plugin
-
-Unordered list:
-
-* something
-* something else
-* third thing
-
-Link to [WordPress](http://wordpress.org/ \"Your favorite software\") and one to [Markdown\'s Syntax Documentation][markdown syntax].
-
-Titles are optional, naturally.
-
-Asterisks for *emphasis*.
-
-Double it up  for **strong**.
+The plugin already comes with all the styles necessary to show the elements on or hide them from the front end, so all you need to do is save your Post, Page or other Post Type and visit your site from a few different devices (or resize your browser) to see your content change depending on the width of the browser!
 
 == Installation ==
 
@@ -81,6 +47,17 @@ Now visit the Instructions page to see what you need to know to use this plugin.
 = I have an issue with this plugin, where can I get support? =
 
 Please open an issue over at [Github](https://github.com/so-wp/so-visibility-classes/issues/new), as **I will not use the support forums** here on WordPress.org
+
+== Other Notes ==
+= Usage =
+
+You can use the SO Visibility Classes plugin basically for any Post Type, but it is important to know that the Styles drop down menu is only visible in the Visual Editor. Therefore if you want to use it for Custom Post Types, it is important that you don't disable the Visual Editor.
+
+It is possible to use the classes in the Text Editor, you can have a look for yourself which classes you need to be using then.
+
+Although possible, **I strongly discourage** using the classes with images. The reason is that the SO Visibility Classes plugin only uses media queries with `display: block;` and `display: none;`. If you were to add a large image to only show on large screens, a medium image to show on tablets and a small image to show on smart phones, then the person visiting your site using a phone has to download all 3 images, which can have a major impact on the data plan of the visitor! 
+
+To conditionally show images it is much, much better to implement the [MobileDetect script](http://mobiledetect.net) on your site.
 
 == Screenshots ==
 1. SO Visibility Classes back end.

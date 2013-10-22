@@ -1,10 +1,10 @@
 == SO Visibility Classes ==
 Contributors: senlin
-Tags: visual editor, content, classes, responsive, browser, tablet, phone, mobile, desktop, laptop, ipad, iphone, android
+Tags: visual editor, tinymce, content, classes, responsive, browser, tablet, phone, mobile, desktop, laptop, ipad, iphone, android
 Donate link: http://senl.in/PPd0na
 Requires at least: 3.6
 Tested up to: 3.7-RC1
-Stable tag: 0.1
+Stable tag: 0.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -69,6 +69,9 @@ Please open an issue over at [Github](https://github.com/so-wp/so-visibility-cla
 3. The screenshot description corresponds to screenshot-3.(png|jpg|jpeg|gif).
 
 == Changelog ==
+= 0.1.1 =
+* Change color coding visual editor styles to button-like text before the selected content
+
 = 0.1 =
 * Initial release.
 

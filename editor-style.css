@@ -1,23 +1,42 @@
-body#tinymce.wp-editor .so-show-small {
-	background-color: #90EE90;
+/**
+ * Styles added to the Visual Editor (TineMCE)
+ * 
+ * @since 0.1.1
+ */
+
+body#tinymce.wp-editor .so-show-small:before,
+body#tinymce.wp-editor .so-show-medium:before,
+body#tinymce.wp-editor .so-show-large:before,
+body#tinymce.wp-editor .so-hide-small:before,
+body#tinymce.wp-editor .so-hide-medium:before,
+body#tinymce.wp-editor .so-hide-large:before {
+    background-color: #D3D3D3;
+    border: 1px solid #AAA;
+    border-radius: 3px;
+    margin-right: 5px;
+    padding: 2px 5px;
 }
 
-body#tinymce.wp-editor .so-show-medium {
-	background-color: #ADD8E6;
+body#tinymce.wp-editor .so-show-small:before {
+    content: "showSmall";
 }
 
-body#tinymce.wp-editor .so-show-large {
-	background-color: #FFC0CB;
+body#tinymce.wp-editor .so-show-medium:before {
+    content: "showMedium";
 }
 
-body#tinymce.wp-editor .so-hide-small {
-	background-color: #FAFAD2;
+body#tinymce.wp-editor .so-show-large:before {
+    content: "showLarge";
 }
 
-body#tinymce.wp-editor .so-hide-medium {
-	background-color: #F0E68C;
+body#tinymce.wp-editor .so-hide-small:before {
+    content: "hideSmall";
 }
 
-body#tinymce.wp-editor .so-hide-large {
-	background-color: #F5F5DC;
+body#tinymce.wp-editor .so-hide-medium:before {
+    content: "hideMedium";
+}
+
+body#tinymce.wp-editor .so-hide-large:before {
+    content: "hideLarge";
 }

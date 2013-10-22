@@ -1,3 +1,9 @@
+/**
+ * Front end styles
+ * 
+ * @since 0.1
+ */
+
 /* Styles for devices up to 768px wide */
 @media only screen and (max-width: 768px) {
 	.so-show-small,
@@ -51,13 +57,15 @@
 }
 
 
-/* The show classes */
-.show-small       /* Visible up to 768px */
-.show-medium      /* Visible between 768px and 1280px */
-.show-large       /* Visible from 1280px up */
+/* Serves as a reminder 
+The SHOW classes
+.show-small       Visible up to 768px
+.show-medium      Visible between 768px and 1280px
+.show-large       Visible from 1280px up
 
-/* The hide classes */
-.hide-small       /* Hidden up to 768px */
-.hide-medium      /* Hidden between 768px and 1280px */
-.hide-large       /* Hidden from 1280px up */
+The HIDE classes
+.hide-small       Hidden up to 768px
+.hide-medium      Hidden between 768px and 1280px
+.hide-large       Hidden from 1280px up
+*/
 

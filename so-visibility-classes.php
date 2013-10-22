@@ -3,7 +3,7 @@
  * Plugin URI: https://github.com/so-wp/so-visibility-classes
  * Description: 
  * Author: Piet Bos
- * Version: 0.1
+ * Version: 0.1.1
  * Author URI: http://senlinonline.com
  *
  * Copywrite 2013 Piet Bos (piethfbos@gmail.com)

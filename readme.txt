@@ -8,10 +8,29 @@ Stable tag: 0.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-With the SO Visibility Classes plugin you can write content specifically for certain browser widths.
+With the SO Visibility Classes plugin you can select classes from the Visual Editor to conditionally show elements for, or hide them from, certain browser widths.
 
 == Description ==
 Long description of this great plugin. No characters limit, and you can use markdown.
+
+= Background Info =
+The other day I was reading [an article over at wpmu.org](http://wpmu.org/is-responsive-design-holding-wordpress-back/) that asked the question whether the responsive design hype is perhaps killing the innovation in WordPress themes development.
+
+To some extent I definitely agree that responsive should not be used as a one-size-fits-all solution. Personally I find it nice that a tablet version and a desktop version look more or less similar, but I wholeheartedly disagree that it should also look similar on smart phones and/or small tablets.
+
+Currently theme developers still tend to work from big to small instead of embracing the [Mobile First](http://www.lukew.com/ff/entry.asp?933) approach.
+
+On [my own website](http://senlinonline.com), which I built with [Foundation 4](http://foundation.zurb.com), I show a lot less content on small screens than I do on "the big screen". Foundation 4 has very useful classes built in to "conditionally" show content depending on the width of the browser window.
+
+Naturally not everyone can build his or her website on Foundation, so that is the reason that I have developed the SO Visibility Classes plugin. I have taken similar classes as Foundation 4 has, but simplified things a little bit:
+
+* show/hide for small
+* show/hide for medium
+* show/hide for large
+
+*(Foundation actually uses show/hide for small, medium down, medium, medium up, large down, large, large up, xlarge)*
+
+At first I was thinking to use shortcodes that the user can then add to the content, but a comment on the article [Dealing with shortcode madness](http://justintadlock.com/archives/2011/05/02/dealing-with-shortcode-madness#comment-335205) changed my mind. Although written more than two years ago, the solution that [Jan Fabry](http://wordpress.stackexchange.com/users/8/jan-fabry) offers in his comment fortunately still works. 
 
 For backwards compatibility, if this section is missing, the full length of the short description will be used, and
 markdown parsed.

@@ -1,7 +1,7 @@
 <?php
 /* Plugin Name: SO Visibility Classes 
  * Plugin URI: https://github.com/so-wp/so-visibility-classes
- * Description: 
+ * Description: With the SO Visibility Classes plugin you can select classes from the Visual Editor to conditionally show elements for, or hide them from, certain browser widths.
  * Author: Piet Bos
  * Version: 0.1.1
  * Author URI: http://senlinonline.com
@@ -107,7 +107,7 @@ function sovc_init() {
  */
 function sovc_add_options_page() {
 	
-	add_options_page( 'SO Visibility Classes Settings', 'SO Visibility Classes', 'manage_options', __FILE__, 'sovc_render_form' );
+	add_options_page( 'SO Visibility Classes Instructions', 'SO Visibility Classes', 'manage_options', __FILE__, 'sovc_render_form' );
 
 }
 
@@ -125,7 +125,37 @@ function sovc_render_form() { ?>
 		
 		<h2><?php _e( 'SO Visibility Classes Instructions', 'sovc' ); ?></h2>
 		
-		<p><?php _e( 'Explanation.', 'sovc' ); ?></p>
+		<p><?php _e( 'With the plugin activated in the Edit Post screen you will see a new "Styles"-menu added to the Visual Editor.<br />The drop down contains 6 different options, each with:', 'sovc' ); ?></p>
+		<ul style="list-style: disc inside none;">
+			<li><?php _e( 'showSmall (this class is visible on a browser width of up to 768px)', 'sovc' ); ?></li>
+			<li><?php _e( 'showMedium (this class is visible on a browser width between 768px and 1280px)', 'sovc' ); ?></li>
+			<li><?php _e( 'showLarge (this class is visible on a browser width from 1280px up)', 'sovc' ); ?></li>
+			<li><?php _e( 'hideSmall (this class is hidden on a browser width of up to 768px)', 'sovc' ); ?></li>
+			<li><?php _e( 'hideMedium (this class is hidden on a browser width between 768px and 1280px)', 'sovc' ); ?></li>
+			<li><?php _e( 'hideLarge (this class is hidden on a browser width from 1280px up)', 'sovc' ); ?></li>
+		</ul>
+		
+		<?php
+	$screenshot_menu_url = plugins_url( 'images/styles-dropdown-menu.png', __FILE__ );
+	$screenshot_editor_url = plugins_url( 'images/visual-editor.png', __FILE__ );
+		?>
+		
+		<img src="<?php echo $screenshot_menu_url; ?>" />
+		
+		<p><?php _e( 'Once you have selected a visibility class, the plugin shows that in 3 locations:', 'sovc' ); ?></p>
+		
+		<img src="<?php echo $screenshot_editor_url; ?>" />
+		
+		<ul>
+			<li><?php _e( '1. as selected in the drop down menu', 'sovc' ); ?></li>
+			<li><?php _e( '2. with a “button” in front of the selector', 'sovc' ); ?></li>
+			<li><?php _e( '3. in the path', 'sovc' ); ?></li>
+		</ul>
+		
+		<p><?php _e( 'It is good to know that the only function of this "button" is to show you that the element behind it has one of the Visibility Classes.<br /> For the rest it does not do anything to your content; you can therefore see it as a "helper".', 'sovc' ); ?></p>
+		<p><?php _e( '', 'sovc' ); ?></p>
+		<p><?php _e( '', 'sovc' ); ?></p>
+		<p><?php _e( '', 'sovc' ); ?></p>
 
 		<p style="margin-top: 15px;">
 			
@@ -195,6 +225,8 @@ function sovc_plugin_action_links( $links, $file ) {
  * via tip Jan Fabry: http://justintadlock.com/archives/2011/05/02/dealing-with-shortcode-madness#comment-335205
  * 
  * adding the number 2-4 in the filter, like mce_buttons_2, mce_buttons_3 or mce_buttons_4 will place the Styles Dropdown on that particular line
+ *
+ * other useful article http://alisothegeek.com/2011/05/tinymce-styles-dropdown-wordpress-visual-editor/
  * 
  * @since 0.1
  */

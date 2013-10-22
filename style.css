@@ -59,13 +59,13 @@
 
 /* Serves as a reminder 
 The SHOW classes
-.show-small       Visible up to 768px
-.show-medium      Visible between 768px and 1280px
-.show-large       Visible from 1280px up
+.so-show-small       Visible up to 768px
+.so-show-medium      Visible between 768px and 1280px
+.so-show-large       Visible from 1280px up
 
 The HIDE classes
-.hide-small       Hidden up to 768px
-.hide-medium      Hidden between 768px and 1280px
-.hide-large       Hidden from 1280px up
+.so-hide-small       Hidden up to 768px
+.so-hide-medium      Hidden between 768px and 1280px
+.so-hide-large       Hidden from 1280px up
 */
 

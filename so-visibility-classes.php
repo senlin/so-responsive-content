@@ -210,12 +210,12 @@ add_filter( 'tiny_mce_before_init', 'so_visibility_classes_mce_before_init' );
 function so_visibility_classes_mce_before_init( $settings ) {
 	
     $style_formats = array(
-        array( 'title' => __( 'show Small', 'sovc' ), 'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', 'classes' => 'so-show-small' ),
-        array( 'title' => __( 'show Medium', 'sovc' ), 'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', 'classes' => 'so-show-medium' ),
-        array( 'title' => __( 'show Large', 'sovc' ), 'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', 'classes' => 'so-show-large' ),
-        array( 'title' => __( 'hide Small', 'sovc' ), 'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', 'classes' => 'so-hide-small' ),
-        array( 'title' => __( 'hide Medium', 'sovc' ), 'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', 'classes' => 'so-hide-medium' ),
-        array( 'title' => __( 'hide Large', 'sovc' ), 'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', 'classes' => 'so-hide-large' ),
+        array( 'title' => __( 'showSmall', 'sovc' ), 'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', 'classes' => 'so-show-small' ),
+        array( 'title' => __( 'showMedium', 'sovc' ), 'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', 'classes' => 'so-show-medium' ),
+        array( 'title' => __( 'showLarge', 'sovc' ), 'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', 'classes' => 'so-show-large' ),
+        array( 'title' => __( 'hideSmall', 'sovc' ), 'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', 'classes' => 'so-hide-small' ),
+        array( 'title' => __( 'hideMedium', 'sovc' ), 'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', 'classes' => 'so-hide-medium' ),
+        array( 'title' => __( 'hideLarge', 'sovc' ), 'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', 'classes' => 'so-hide-large' ),
     );
     $settings['style_formats'] = json_encode( $style_formats );
 

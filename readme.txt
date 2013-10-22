@@ -64,9 +64,10 @@ Now visit the Instructions page to see what you need to know to use this plugin.
 Please open an issue over at [Github](https://github.com/so-wp/so-visibility-classes/issues/new), as **I will not use the support forums** here on WordPress.org
 
 == Screenshots ==
-1. The screenshot description corresponds to screenshot-1.(png|jpg|jpeg|gif).
-2. The screenshot description corresponds to screenshot-2.(png|jpg|jpeg|gif).
-3. The screenshot description corresponds to screenshot-3.(png|jpg|jpeg|gif).
+1. SO Visibility Classes back end.
+2. SO Visibility Classes front end large (>1280px).
+3. SO Visibility Classes front end medium (>768px <1280px).
+4. SO Visibility Classes front end small (<768px).
 
 == Changelog ==
 = 0.1.1 =

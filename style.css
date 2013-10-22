@@ -1,0 +1,63 @@
+/* Styles for devices up to 768px wide */
+@media only screen and (max-width: 768px) {
+	.so-show-small,
+	.so-hide-medium {
+		display: block;
+	}
+	.so-show-medium,
+	.so-show-large,
+	.so-hide-small {
+		display: none;
+	}
+}
+
+/* Styles for devices from 768px - 1280px wide */
+@media only screen and (min-width: 768px) {
+	.so-show-medium,
+	.so-show-large {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+	.so-show-small,
+	.so-show-large,
+	.so-hide-medium {
+		display: none;
+	}
+	.so-show-medium {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+	.so-hide-large {
+		display: block;
+	}	
+}
+
+/* Styles for devices from 1280px wide */
+@media only screen and (min-width: 1280px) {
+	.so-show-small,
+	.so-show-medium,
+	.so-hide-large {
+		display: none;
+	}
+	.so-show-large,
+	.so-hide-small,
+	.so-hide-medium {
+		display: block;
+	}
+}
+
+
+/* The show classes */
+.show-small       /* Visible up to 768px */
+.show-medium      /* Visible between 768px and 1280px */
+.show-large       /* Visible from 1280px up */
+
+/* The hide classes */
+.hide-small       /* Hidden up to 768px */
+.hide-medium      /* Hidden between 768px and 1280px */
+.hide-large       /* Hidden from 1280px up */
+

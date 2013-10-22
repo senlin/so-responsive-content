@@ -14,7 +14,7 @@ More information about Background, Implementation and Usage available via the [W
 
 ### I have an issue with this plugin, where can I get support?
 
-Please open an issue here on [Github](https://github.com/so-wp/so-remove-wpml-menu-sync/issues)
+Please open an issue here on [Github](https://github.com/so-wp/so-visibility-classes/issues)
 
 ## Contributions
 

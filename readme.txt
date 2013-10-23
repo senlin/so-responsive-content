@@ -1,4 +1,4 @@
-== SO Visibility Classes ==
+=== SO Visibility Classes ===
 Contributors: senlin
 Tags: visual editor, tinymce, content, classes, responsive, browser, tablet, phone, mobile, desktop, laptop, ipad, iphone, android
 Donate link: http://senl.in/PPd0na
@@ -8,7 +8,7 @@ Stable tag: 0.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-With the SO Visibility Classes plugin you can select classes from the Visual Editor to conditionally show elements for, or hide them from, certain browser widths.
+With the SO Visibility Classes plugin you can select classes from the Visual Editor to conditionally show/hide elements for/from set browser widths.
 
 == Description ==
 With these classes it becomes very simple to show or hide content for these specific browser widths! As an example you can make the text on your "About" page much longer for people that visit your site using a large screen, whereas you show people on small(er) screens just the main points. On the other end of the spectrum you can make a telephone number only clickable (i.e. with a link that goes to the phone app of the device) for small screens, whereas for large screens you won't be needing a link there.

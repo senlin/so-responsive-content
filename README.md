@@ -3,7 +3,7 @@ SO Visibility Classes
 
 ###### Version 0.1.1
 ###### requires at least WordPress 3.6
-###### tested up to 3.7-RC1
+###### tested up to 3.7-RC2
 ###### Author: [Piet Bos](https://github.com/senlin)
 
 With the SO Visibility Classes you can select classes from the Visual Editor to conditionally show elements for, or hide them from, certain browser widths.

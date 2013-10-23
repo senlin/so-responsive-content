@@ -3,7 +3,7 @@ Contributors: senlin
 Tags: visual editor, tinymce, content, classes, responsive, browser, tablet, phone, mobile, desktop, laptop, ipad, iphone, android
 Donate link: http://senl.in/PPd0na
 Requires at least: 3.6
-Tested up to: 3.7-RC1
+Tested up to: 3.7-RC2
 Stable tag: 0.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

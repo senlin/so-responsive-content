@@ -1,0 +1,140 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: SO Visibility Classes\n"
+"POT-Creation-Date: 2013-10-23 12:45+0800\n"
+"PO-Revision-Date: 2013-10-23 12:45+0800\n"
+"Last-Translator: Piet Bos\n"
+"Language-Team: SO WP\n"
+"MIME-Version: 1.0\n"
+
+#. Text in echo
+#: so-visibility-classes.php:150
+msgid "1. as selected in the drop down menu"
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:151
+msgid "2. with a “button” in front of the selector"
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:152
+msgid "3. in the path"
+msgstr ""
+
+#. Text in function
+#: so-visibility-classes.php:1
+msgid "<div class=\"error\"><p>%1$s</p><p><i>%2$s</i> has been deactivated.</p></div>"
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:177
+msgid "About the Author"
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:159
+msgid "Although possible, <strong>I strongly discourage</strong> using the classes with images. The reason is that the SO Visibility Classes plugin only uses media queries with <code>display: block;</code> and <code>display: none;</code>. If you were to add a large image to only show on large screens, a medium image to show on tablets and a small image to show on smart phones, then the person visiting your site using a phone has to download all 3 images, which can have a major impact on the data plan of the visitor!"
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:194
+msgid "Github"
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:191
+msgid "Google+"
+msgstr ""
+
+#. Text in function
+#: so-visibility-classes.php:183
+msgid "Hi, my name is Piet Bos, I hope you like this plugin! Please check out any of my other plugins on <a href=\"%s\" title=\"SO WP Plugins\">SO WP Plugins</a>. You can find out more information about me via the following links:"
+msgstr ""
+
+#. Text in function
+#: so-visibility-classes.php:165
+msgid "If you have found this plugin at all useful, please give it a favourable rating in the <a href=\"%s\" title=\"Rate this plugin!\">WordPress Plugin Repository</a>."
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:155
+msgid "It is good to know that the only function of this \"button\" is to show you that the element behind it has one of the Visibility Classes.<br /> For the rest it does not do anything to your content; you can therefore see it as a \"helper\"."
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:192
+msgid "LinkedIn"
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:145
+msgid "Once you have selected a visibility class, the plugin shows that in 3 locations:"
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:126
+msgid "SO Visibility Classes Instructions"
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:189
+msgid "Senlin Online"
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:193
+msgid "Twitter: @piethfbos"
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:190
+msgid "WP Tips"
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:128
+msgid "With the plugin activated in the Edit Post screen you will see a new \"Styles\"-menu added to the Visual Editor.<br />The drop down contains 6 different options, each with:"
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:195
+msgid "WordPress.org Profile"
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:157
+msgid "You can use the Visibility Classes on virtually all elements: p, h1, h2, h3, h4, h5, h6, td, th, div, ul, ol, li, table and img."
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:135
+msgid "hideLarge (this class is hidden on a browser width from 1280px up)"
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:134
+msgid "hideMedium (this class is hidden on a browser width between 768px and 1280px)"
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:133
+msgid "hideSmall (this class is hidden on a browser width of up to 768px)"
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:132
+msgid "showLarge (this class is visible on a browser width from 1280px up)"
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:131
+msgid "showMedium (this class is visible on a browser width between 768px and 1280px)"
+msgstr ""
+
+#. Text in echo
+#: so-visibility-classes.php:130
+msgid "showSmall (this class is visible on a browser width of up to 768px)"
+msgstr ""

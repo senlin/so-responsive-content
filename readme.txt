@@ -21,6 +21,8 @@ The SO Visibility Classes plugin adds a Styles drop down menu to the first line 
 
 The plugin already comes with all the styles necessary to show the elements on or hide them from the front end, so all you need to do is save your Post, Page or other Post Type and visit your site from a few different devices (or resize your browser) to see your content change depending on the width of the browser!
 
+Under the [Other Notes](http://wordpress.org/plugins/so-visibility-classes/other_notes/)-tab I have added some information on Usage and Languages.
+
 == Installation ==
 
 = Wordpress =
@@ -59,6 +61,12 @@ Although possible, **I strongly discourage** using the classes with images. The 
 
 To conditionally show images it is much, much better to implement the [MobileDetect script](http://mobiledetect.net) on your site.
 
+= Languages =
+
+Naturally the SO Visibility Classes plugin has been fully internationalized. In the languages directory you will find the .pot file and the .po file. I already have added the Dutch translation so in that same directory you will also find the sovc-nl_NL.po and sovc-nl_NL.mo files.
+
+The plugin only contains 26 strings, it would be a awesome if you can help me translate it into other languages!
+
 == Screenshots ==
 1. SO Visibility Classes back end.
 2. SO Visibility Classes front end large (>1280px).
@@ -70,7 +78,7 @@ To conditionally show images it is much, much better to implement the [MobileDet
 * Change color coding visual editor styles to button-like text before the selected content
 
 = 0.1 =
-* Initial release.
+* Initial release on Github.
 
 == Upgrade Notice ==
 = 0.1 =

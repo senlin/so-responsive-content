@@ -65,7 +65,7 @@ To conditionally show images it is much, much better to implement the [MobileDet
 
 Naturally the SO Visibility Classes plugin has been fully internationalized. In the languages directory you will find the .pot file and the .po file. I already have added the Dutch translation so in that same directory you will also find the sovc-nl_NL.po and sovc-nl_NL.mo files.
 
-The plugin only contains 26 strings, it would be a awesome if you can help me translate it into other languages!
+The plugin only contains 38 strings (of which many only 1 word); it would be a awesome if you can help me translate it into other languages!
 
 == Screenshots ==
 1. SO Visibility Classes back end.

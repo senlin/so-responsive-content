@@ -1,141 +1,170 @@
+# Copyright (C) 2013 SO Visibility Classes
+# This file is distributed under the same license as the SO Visibility Classes package.
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: SO Visibility Classes\n"
-"POT-Creation-Date: 2013-10-23 12:45+0800\n"
-"PO-Revision-Date: 2013-10-23 13:12+0830\n"
-"Last-Translator: Piet Bos <piet@senlinonline.com>\n"
-"Language-Team: SO WP\n"
+"Project-Id-Version: SO Visibility Classes 0.1.1\n"
+"Report-Msgid-Bugs-To: https://github.com/so-wp/so-visibility-classes/issues\n"
+"POT-Creation-Date: 2013-10-23 14:33:25+08:00\n"
 "MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-10-23 15:12+0830\n"
+"Last-Translator: Piet Bos <piet@senlinonline.com>\n"
+"Language-Team: SO WP <http://so-wp.github.io>\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: NETHERLANDS\n"
+"X-Poedit-SourceCharset: utf-8\n"
 
-#. Text in echo
-#: so-visibility-classes.php:150
-msgid "1. as selected in the drop down menu"
-msgstr "1. zoals geselecteerd in het drop down menu"
-
-#. Text in echo
-#: so-visibility-classes.php:151
-msgid "2. with a “button” in front of the selector"
-msgstr "2. met een \"button\" voor de selector"
-
-#. Text in echo
-#: so-visibility-classes.php:152
-msgid "3. in the path"
-msgstr "3. in het path"
-
-#. Text in function
-#: so-visibility-classes.php:1
+#: so-visibility-classes.php:74
 msgid "<div class=\"error\"><p>%1$s</p><p><i>%2$s</i> has been deactivated.</p></div>"
 msgstr "<div class=\"error\"><p>%1$s</p><p><i>%2$s</i> is gedeactiveerd.</p></div>"
 
-#. Text in echo
-#: so-visibility-classes.php:177
-msgid "About the Author"
-msgstr "Over de Auteur"
-
-#. Text in echo
-#: so-visibility-classes.php:159
-msgid "Although possible, <strong>I strongly discourage</strong> using the classes with images. The reason is that the SO Visibility Classes plugin only uses media queries with <code>display: block;</code> and <code>display: none;</code>. If you were to add a large image to only show on large screens, a medium image to show on tablets and a small image to show on smart phones, then the person visiting your site using a phone has to download all 3 images, which can have a major impact on the data plan of the visitor!"
-msgstr "Alhoewel het mogelijk is, <strong>radd ik ten zeerste af</strong> om de klassen met afbeeldingen te gebruiken. De reden is dat de SO Visibility Classes plugin alleen maar media queries gebruikt met <code>display: block;</code> en <code>display: none;</code>. Wanneer je een grote afbeelding zou toevoegen voor grote schermen, een middelgrote afbeelding voor middelgrote schermen en een kleine afbeelding voor smart phones, dan zal degene die uw website bezoekt via een telefoon alle 3 de afbeeldingen moeten downloaden, wat natuurlijk desastreuse gevolgen kan hebben voor het dataplan van deze bezoeker!"
-
-#. Text in echo
-#: so-visibility-classes.php:194
-msgid "Github"
-msgstr "Github"
-
-#. Text in echo
-#: so-visibility-classes.php:191
-msgid "Google+"
-msgstr "Google+"
-
-#. Text in function
-#: so-visibility-classes.php:183
-msgid "Hi, my name is Piet Bos, I hope you like this plugin! Please check out any of my other plugins on <a href=\"%s\" title=\"SO WP Plugins\">SO WP Plugins</a>. You can find out more information about me via the following links:"
-msgstr "Hoi, mijn naam is Piet Bos, hopelijk vind je dit een handige plugin! Kijk ook eens naar mijn andere plugins via <a href=\"%s\" title=\"SO WP Plugins\">SO WP Plugins</a>. Je kan meer informatie over mij vinden via de onderstaande links:"
-
-#. Text in function
-#: so-visibility-classes.php:165
-msgid "If you have found this plugin at all useful, please give it a favourable rating in the <a href=\"%s\" title=\"Rate this plugin!\">WordPress Plugin Repository</a>."
-msgstr "Wanneer je deze plugin handig vindt, geef het dan een gunstige waardering in de <a href=\"%s\" title=\"Geef deze plugin een waardering!\">WordPress Plugin Repository</a>."
-
-#. Text in echo
-#: so-visibility-classes.php:155
-msgid "It is good to know that the only function of this \"button\" is to show you that the element behind it has one of the Visibility Classes.<br /> For the rest it does not do anything to your content; you can therefore see it as a \"helper\"."
-msgstr "Het is goed om te weten dat de enige functie van deze \"button\" is om te laten zien dat het element erna één van de Visibility Classes heeft.<br /> Voor de rest doet het niets met uw content; u kunt het zien als een \"hulpje\"."
-
-#. Text in echo
-#: so-visibility-classes.php:192
-msgid "LinkedIn"
-msgstr "LinkedIn"
-
-#. Text in echo
-#: so-visibility-classes.php:145
-msgid "Once you have selected a visibility class, the plugin shows that in 3 locations:"
-msgstr "Zodra u een visibility klasse heeft geselecteerd, laat de plugin dat op 3 locaties zien:"
-
-#. Text in echo
 #: so-visibility-classes.php:126
 msgid "SO Visibility Classes Instructions"
 msgstr "SO Visibility Classes Instructies"
 
-#. Text in echo
-#: so-visibility-classes.php:189
-msgid "Senlin Online"
-msgstr "Senlin Online"
-
-#. Text in echo
-#: so-visibility-classes.php:193
-msgid "Twitter: @piethfbos"
-msgstr "Twitter: @piethfbos"
-
-#. Text in echo
-#: so-visibility-classes.php:190
-msgid "WP Tips"
-msgstr "WP Tips"
-
-#. Text in echo
 #: so-visibility-classes.php:128
 msgid "With the plugin activated in the Edit Post screen you will see a new \"Styles\"-menu added to the Visual Editor.<br />The drop down contains 6 different options, each with:"
 msgstr "Met de plugin geactiveerd zult u in het Bewerk Artikel scherm zien dat er aan de Visual Editor een nieuw \"Stijl\"-menu is toegevoegd.<br />Het drop down menu bevat 6 verschilende opties, elk met:"
 
-#. Text in echo
-#: so-visibility-classes.php:195
-msgid "WordPress.org Profile"
-msgstr "WordPress.org Profiel"
+#: so-visibility-classes.php:130
+msgid "showSmall (this class is visible on a browser width of up to 768px)"
+msgstr "showSmall (deze klasse is zichtbaar op een browser breedte tot 768px)"
 
-#. Text in echo
-#: so-visibility-classes.php:157
-msgid "You can use the Visibility Classes on virtually all elements: p, h1, h2, h3, h4, h5, h6, td, th, div, ul, ol, li, table and img."
-msgstr "U kunt de Visibility Classes op vrijwel alle elementen gebruiken: p, h1, h2, h3, h4, h5, h6, td, th, div, ul, ol, li, table en img."
+#: so-visibility-classes.php:131
+msgid "showMedium (this class is visible on a browser width between 768px and 1280px)"
+msgstr "showMedium (deze klasse is zichtbaar op een browser breedte tussen 768px en 1280px)"
 
-#. Text in echo
-#: so-visibility-classes.php:135
-msgid "hideLarge (this class is hidden on a browser width from 1280px up)"
-msgstr "hideLarge (deze klasse is verborgen op een browser breedte van 1280px en hoger)"
+#: so-visibility-classes.php:132
+msgid "showLarge (this class is visible on a browser width from 1280px up)"
+msgstr "showLarge (deze klasse is zichtbaar op een browser breedte van 1280px en hoger)"
 
-#. Text in echo
-#: so-visibility-classes.php:134
-msgid "hideMedium (this class is hidden on a browser width between 768px and 1280px)"
-msgstr "hideMedium (deze klasse is verborgen op een browser breedte tussen 768px en 1280px)"
-
-#. Text in echo
 #: so-visibility-classes.php:133
 msgid "hideSmall (this class is hidden on a browser width of up to 768px)"
 msgstr "hideSmall (deze klasse is verborgen op een browser breedte tot 768px)"
 
-#. Text in echo
-#: so-visibility-classes.php:132
-msgid "showLarge (this class is visible on a browser width from 1280px up)"
-msgstr "hideLarge (deze klasse is zichtbaar op een browser breedte van 1280px en hoger)"
+#: so-visibility-classes.php:134
+msgid "hideMedium (this class is hidden on a browser width between 768px and 1280px)"
+msgstr "hideMedium (deze klasse is verborgen op een browser breedte tussen 768px en 1280px)"
 
-#. Text in echo
-#: so-visibility-classes.php:131
-msgid "showMedium (this class is visible on a browser width between 768px and 1280px)"
-msgstr "hideMedium (deze klasse is zichtbaar op een browser breedte tussen 768px en 1280px)"
+#: so-visibility-classes.php:135
+msgid "hideLarge (this class is hidden on a browser width from 1280px up)"
+msgstr "hideLarge (deze klasse is verborgen op een browser breedte van 1280px en hoger)"
 
-#. Text in echo
-#: so-visibility-classes.php:130
-msgid "showSmall (this class is visible on a browser width of up to 768px)"
-msgstr "hideSmall (deze klasse is zichtbaar op een browser breedte tot 768px)"
+#: so-visibility-classes.php:145
+msgid "Once you have selected a visibility class, the plugin shows that in 3 locations:"
+msgstr "Zodra u een visibiliteits klasse heeft geselecteerd, laat de plugin dat op 3 locaties zien:"
+
+#: so-visibility-classes.php:150
+msgid "1. as selected in the drop down menu"
+msgstr "1. als geselecteerd in het drop down menu"
+
+#: so-visibility-classes.php:151
+msgid "2. with a “button” in front of the selector"
+msgstr "2. met een \"button\" voor de selector"
+
+#: so-visibility-classes.php:152
+msgid "3. in the path"
+msgstr "3. in het path"
+
+#: so-visibility-classes.php:155
+msgid "It is good to know that the only function of this \"button\" is to show you that the element behind it has one of the Visibility Classes.<br /> For the rest it does not do anything to your content; you can therefore see it as a \"helper\"."
+msgstr "Het is goed om te weten dat de enige functie van deze \"button\" is om te laten zien dat het element erna één van de Visibility Classes heeft.<br /> Voor de rest doet het niets met uw content; u kunt het zien als een \"hulpje\"."
+
+#: so-visibility-classes.php:157
+msgid "You can use the Visibility Classes on virtually all elements: p, h1, h2, h3, h4, h5, h6, td, th, div, ul, ol, li, table and img."
+msgstr "U kunt de Visibility Classes op vrijwel alle elementen gebruiken: p, h1, h2, h3, h4, h5, h6, td, th, div, ul, ol, li, table en img."
+
+#: so-visibility-classes.php:159
+msgid "Although possible, <strong>I strongly discourage</strong> using the classes with images. The reason is that the SO Visibility Classes plugin only uses media queries with <code>display: block;</code> and <code>display: none;</code>. If you were to add a large image to only show on large screens, a medium image to show on tablets and a small image to show on smart phones, then the person visiting your site using a phone has to download all 3 images, which can have a major impact on the data plan of the visitor!"
+msgstr "Alhoewel het mogelijk is, <strong>radd ik ten zeerste af</strong> om de klassen met afbeeldingen te gebruiken. De reden is dat de SO Visibility Classes plugin alleen maar media queries gebruikt met <code>display: block;</code> en <code>display: none;</code>. Wanneer je een grote afbeelding zou toevoegen voor grote schermen, een middelgrote afbeelding voor middelgrote schermen en een kleine afbeelding voor smart phones, dan zal degene die uw website bezoekt via een telefoon alle 3 de afbeeldingen moeten downloaden, wat natuurlijk desastreuse gevolgen kan hebben voor het dataplan van deze bezoeker!"
+
+#. Translators: variable is link to WP Repo
+#: so-visibility-classes.php:167
+msgid "If you have found this plugin at all useful, please give it a favourable rating in the <a href=\"%s\" title=\"Rate this plugin!\">WordPress Plugin Repository</a>."
+msgstr "Wanneer je deze plugin handig vindt, geef het dan een gunstige waardering in de <a href=\"%s\" title=\"Geef deze plugin een waardering!\">WordPress Plugin Repository</a>."
+
+#: so-visibility-classes.php:177
+msgid "About the Author"
+msgstr "Over de Auteur"
+
+#: so-visibility-classes.php:183
+msgid "Hi, my name is Piet Bos, I hope you like this plugin! Please check out any of my other plugins on <a href=\"%s\" title=\"SO WP Plugins\">SO WP Plugins</a>. You can find out more information about me via the following links:"
+msgstr "Hoi, mijn naam is Piet Bos, hopelijk vind je dit een handige plugin! Kijk ook eens naar mijn andere plugins via <a href=\"%s\" title=\"SO WP Plugins\">SO WP Plugins</a>. Je kan meer informatie over mij vinden via de onderstaande links:"
+
+#: so-visibility-classes.php:189
+msgid "Senlin Online"
+msgstr "Senlin Online"
+
+#: so-visibility-classes.php:190
+msgid "WP Tips"
+msgstr "WP Tips"
+
+#: so-visibility-classes.php:191
+msgid "Google+"
+msgstr "Google+"
+
+#: so-visibility-classes.php:192
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: so-visibility-classes.php:193
+msgid "Twitter: @piethfbos"
+msgstr "Twitter: @piethfbos"
+
+#: so-visibility-classes.php:194
+msgid "Github"
+msgstr "Github"
+
+#: so-visibility-classes.php:195
+msgid "WordPress.org Profile"
+msgstr "WordPress.org Profiel"
+
+#: so-visibility-classes.php:216
+msgid "Read before using"
+msgstr "Lees voor gebruik"
+
+#: so-visibility-classes.php:246
+msgid "showSmall"
+msgstr "showSmall"
+
+#: so-visibility-classes.php:247
+msgid "showMedium"
+msgstr "showMedium"
+
+#: so-visibility-classes.php:248
+msgid "showLarge"
+msgstr "showLarge"
+
+#: so-visibility-classes.php:249
+msgid "hideSmall"
+msgstr "hideSmall"
+
+#: so-visibility-classes.php:250
+msgid "hideMedium"
+msgstr "hideMedium"
+
+#: so-visibility-classes.php:251
+msgid "hideLarge"
+msgstr "hideLarge"
+
+#. Plugin Name of the plugin/theme
+msgid "SO Visibility Classes"
+msgstr "SO Visibility Classes"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/so-wp/so-visibility-classes"
+msgstr "https://github.com/so-wp/so-visibility-classes"
+
+#. Description of the plugin/theme
+msgid "With the SO Visibility Classes plugin you can select classes from the Visual Editor to conditionally show elements for, or hide them from, certain browser widths."
+msgstr "Met de SO Visibility Classes plugin kan je vanuit de TinyMCE Editor  klassen selecteren om voorwaardelijk elementen te tonen aan, of te verbergen voor, bepaalde browser breedtes."
+
+#. Author of the plugin/theme
+msgid "Piet Bos"
+msgstr "Piet Bos"
+
+#. Author URI of the plugin/theme
+msgid "http://senlinonline.com"
+msgstr "http://senlinonline.com"
 

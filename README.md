@@ -1,9 +1,9 @@
-SO Visibility Classes
+SO Responsive Content
 =====================
 
-###### Version 0.1.1
+###### Version 0.2
 ###### requires at least WordPress 3.6
-###### tested up to 3.7-RC2
+###### tested up to 3.7
 ###### Author: [Piet Bos](https://github.com/senlin)
 
 With the SO Visibility Classes you can select classes from the Visual Editor to conditionally show elements for, or hide them from, certain browser widths.
@@ -44,6 +44,13 @@ This repo is open to _any_ kind of contributions.
 = next version =
 
 * 
+
+= 0.2 =
+
+* name change to SO Responsive Content (from SO Visibility Classes)
+* update readme files with new name
+* update language files with new name
+* tested up to 3.7
 
 = 0.1.1 =
 

@@ -1,9 +1,9 @@
 <?php
-/* Plugin Name: SO Visibility Classes 
+/* Plugin Name: SO Responsive Content (SO Visibility Classes)
  * Plugin URI: https://github.com/so-wp/so-visibility-classes
- * Description: With the SO Visibility Classes plugin you can select classes from the Visual Editor to conditionally show elements for, or hide them from, certain browser widths.
+ * Description: With the SO Responsive Content plugin you can easily adjust the content of your Posts/Pages to different devices by making use of visibility classes.
  * Author: Piet Bos
- * Version: 0.1.1
+ * Version: 0.2.0
  * Author URI: http://senlinonline.com
  *
  * Copywrite 2013 Piet Bos (piethfbos@gmail.com)

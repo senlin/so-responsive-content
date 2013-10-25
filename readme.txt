@@ -8,8 +8,7 @@ Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-With the SO Responsive Content plugin you can easily adjust the content of your Posts/Pages to different devices by making use of visibility classes.
-
+With the SO Responsive Content plugin you can easily adjust the length of your content to different devices by making use of visibility classes.
 
 == Description ==
 

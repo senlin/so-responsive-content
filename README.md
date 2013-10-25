@@ -6,7 +6,7 @@ SO Responsive Content
 ###### tested up to 3.7
 ###### Author: [Piet Bos](https://github.com/senlin)
 
-With the SO Visibility Classes you can select classes from the Visual Editor to conditionally show elements for, or hide them from, certain browser widths.
+With the SO Responsive Content plugin you can easily adjust the content of your Posts/Pages to different devices by making use of visibility classes.
 
 More information about Background, Implementation and Usage available via the [Wiki](https://github.com/so-wp/so-visibility-classes/wiki/_pages)
 

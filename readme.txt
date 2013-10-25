@@ -8,7 +8,7 @@ Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-With the SO Responsive Content plugin you can easily adjust the length of your content to different devices by making use of visibility classes.
+With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
 
 == Description ==
 
@@ -54,7 +54,7 @@ Please open an issue over at [Github](https://github.com/so-wp/so-visibility-cla
 == Other Notes ==
 = Usage =
 
-You can use the SO Responsive Content plugin basically for any Post Type, but it is important to know that the Styles drop down menu is only visible in the Visual Editor. Therefore if you want to use it for Custom Post Types, it is important that you don't disable the Visual Editor.
+You can use the SO Responsive Content plugin basically for any Post Type, but it is important to know that the Styles drop down menu is only visible in the Visual Editor. Therefore it is important that you don't disable the Visual Editor.
 
 It is possible to use the classes in the Text Editor, you can have a look for yourself which classes you need to be using then.
 

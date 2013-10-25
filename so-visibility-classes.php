@@ -1,9 +1,9 @@
 <?php
 /* Plugin Name: SO Responsive Content (SO Visibility Classes)
  * Plugin URI: https://github.com/so-wp/so-visibility-classes
- * Description: With the SO Responsive Content plugin you can easily adjust the content of your Posts/Pages to different devices by making use of visibility classes.
+ * Description: With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
  * Author: Piet Bos
- * Version: 0.2.0
+ * Version: 0.2
  * Author URI: http://senlinonline.com
  *
  * Copywrite 2013 Piet Bos (piethfbos@gmail.com)
@@ -69,7 +69,7 @@ function sovc_check_admin_notices()
 	unset( $_GET['activate'] );
 
 	// this plugin's name
-	$name = get_file_data( __FILE__, array ( 'Plugin Name' ), 'plugin' );
+	$name = get_file_data( __FILE__, array ( 'SO Responsive Content' ), 'plugin' );
 
 	printf( __( '<div class="error"><p>%1$s</p><p><i>%2$s</i> has been deactivated.</p></div>', 'sovc' ),
 		join( '</p><p>', $errors ),
@@ -107,7 +107,7 @@ function sovc_init() {
  */
 function sovc_add_options_page() {
 	
-	add_options_page( 'SO Visibility Classes Instructions', 'SO Visibility Classes', 'manage_options', __FILE__, 'sovc_render_form' );
+	add_options_page( 'SO Responsive Content Instructions', 'SO Responsive Content', 'manage_options', __FILE__, 'sovc_render_form' );
 
 }
 
@@ -123,7 +123,7 @@ function sovc_render_form() { ?>
 		<!-- Display Plugin Icon, Header, and Description -->
 		<div class="icon32" id="icon-options-general"><br></div>
 		
-		<h2><?php _e( 'SO Visibility Classes Instructions', 'sovc' ); ?></h2>
+		<h2><?php _e( 'SO Responsive Content Instructions', 'sovc' ); ?></h2>
 		
 		<p><?php _e( 'With the plugin activated in the Edit Post screen you will see a new "Styles"-menu added to the Visual Editor.<br />The drop down contains 6 different options, each with:', 'sovc' ); ?></p>
 		<ul style="list-style: disc inside none;">
@@ -152,11 +152,11 @@ function sovc_render_form() { ?>
 			<li><?php _e( '3. in the path', 'sovc' ); ?></li>
 		</ul>
 		
-		<p><?php _e( 'It is good to know that the only function of this "button" is to show you that the element behind it has one of the Visibility Classes.<br /> For the rest it does not do anything to your content; you can therefore see it as a "helper".', 'sovc' ); ?></p>
+		<p><?php _e( 'It is good to know that the only function of this "button" is to show you that the element behind it has one of the visibility classes.<br /> For the rest it does not do anything to your content; you can therefore see it as a "helper".', 'sovc' ); ?></p>
 		
-		<p><?php _e( 'You can use the Visibility Classes on virtually all elements: p, h1, h2, h3, h4, h5, h6, td, th, div, ul, ol, li, table and img.', 'sovc' ); ?></p>
+		<p><?php _e( 'You can use the visibility classes on virtually all elements: p, h1, h2, h3, h4, h5, h6, td, th, div, ul, ol, li, table and img.', 'sovc' ); ?></p>
 		
-		<p><?php _e( 'Although possible, <strong>I strongly discourage</strong> using the classes with images. The reason is that the SO Visibility Classes plugin only uses media queries with <code>display: block;</code> and <code>display: none;</code>. If you were to add a large image to only show on large screens, a medium image to show on tablets and a small image to show on smart phones, then the person visiting your site using a phone has to download all 3 images, which can have a major impact on the data plan of the visitor!', 'sovc' ); ?></p>
+		<p><?php _e( 'Although possible, <strong>I strongly discourage</strong> using the classes with images. The reason is that the SO Responsive Content plugin only uses media queries with <code>display: block;</code> and <code>display: none;</code>. If you were to add a large image to only show on large screens, a medium image to show on tablets and a small image to show on smart phones, then the person visiting your site using a phone has to download all 3 images, which can have a major impact on the data plan of the visitor!', 'sovc' ); ?></p>
 
 		<p style="margin-top: 15px;">
 			

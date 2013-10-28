@@ -69,7 +69,7 @@ function sovc_check_admin_notices()
 	unset( $_GET['activate'] );
 
 	// this plugin's name
-	$name = get_file_data( __FILE__, array ( 'SO Responsive Content' ), 'plugin' );
+	$name = get_file_data( __FILE__, array ( 'Plugin Name' ), 'plugin' );
 
 	printf( __( '<div class="error"><p>%1$s</p><p><i>%2$s</i> has been deactivated.</p></div>', 'sovc' ),
 		join( '</p><p>', $errors ),

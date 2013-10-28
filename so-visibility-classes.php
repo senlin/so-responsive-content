@@ -158,8 +158,6 @@ function sovc_render_form() { ?>
 		
 		<p><?php _e( 'Although possible, <strong>I strongly discourage</strong> using the classes with images. The reason is that the SO Responsive Content plugin only uses media queries with <code>display: block;</code> and <code>display: none;</code>. If you were to add a large image to only show on large screens, a medium image to show on tablets and a small image to show on smart phones, then the person visiting your site using a phone has to download all 3 images, which can have a major impact on the data plan of the visitor!', 'sovc' ); ?></p>
 
-		<p style="margin-top: 15px;">
-			
 			<p style="font-style: italic; font-weight: bold; color: #26779A;">
 				
 				<?php
@@ -198,8 +196,6 @@ function sovc_render_form() { ?>
 				</div> <!-- end .inside -->
 			
 			</div> <!-- end .postbox -->
-
-		</p>
 
 	</div> <!-- end .wrap -->
 

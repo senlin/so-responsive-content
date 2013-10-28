@@ -43,7 +43,7 @@ This repo is open to _any_ kind of contributions.
 
 = next version =
 
-* 
+* make correction to version check function to actually output the correct plugin name
 
 = 0.2 =
 

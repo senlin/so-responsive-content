@@ -44,6 +44,7 @@ This repo is open to _any_ kind of contributions.
 = next version =
 
 * make correction to version check function to actually output the correct plugin name
+* enhance styling: when class is inside a paragraph `display: block;` should be `display: inline-block;`
 
 = 0.2 =
 

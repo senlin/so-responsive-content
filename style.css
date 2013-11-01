@@ -37,7 +37,7 @@
 	.so-show-small,
 	.so-show-large,
 	.so-hide-medium {
-		display: none;
+		display: none !important;
 	}
 	.so-show-medium {
 		display: block;
@@ -53,6 +53,9 @@
 	}	
 	p > .so-hide-large {
 		display: inline-block;
+	}
+	.so-show-large {
+		display: none;
 	}	
 }
 

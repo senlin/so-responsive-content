@@ -41,23 +41,23 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
-= 0.3beta =
+### 0.3beta
 
 * make correction to version check function to actually output the correct plugin name
 * enhance styling: when class is inside a paragraph `display: block;` should be `display: inline-block;`
 * add 6 more styles for inline links/no-links
 
-= 0.2 =
+### 0.2
 
 * name change to SO Responsive Content (from SO Visibility Classes)
 * update readme files with new name
 * update language files with new name
 * tested up to 3.7
 
-= 0.1.1 =
+### 0.1.1
 
 * Change color coding visual editor styles to button-like text before the selected content
 
-= 0.1 =
+### 0.1
 
 * First stable release

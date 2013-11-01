@@ -1,9 +1,9 @@
 SO Responsive Content
 =====================
 
-###### Version 0.2
+###### Version 0.3beta
 ###### requires at least WordPress 3.6
-###### tested up to 3.7
+###### tested up to 3.7.1
 ###### Author: [Piet Bos](https://github.com/senlin)
 
 With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
@@ -41,10 +41,11 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
-= next version =
+= 0.3beta =
 
 * make correction to version check function to actually output the correct plugin name
 * enhance styling: when class is inside a paragraph `display: block;` should be `display: inline-block;`
+* add 6 more styles for inline links/no-links
 
 = 0.2 =
 

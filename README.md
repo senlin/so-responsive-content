@@ -45,7 +45,8 @@ This repo is open to _any_ kind of contributions.
 
 * make correction to version check function to actually output the correct plugin name
 * enhance styling: when class is inside a paragraph `display: block;` should be `display: inline-block;`
-* add 6 more styles for inline links/no-links
+* 3 additional styles for links
+* 6 additional styles for inline text (in `&lt;span&gt;`s)
 
 ### 0.2
 

@@ -245,12 +245,15 @@ function so_visibility_classes_mce_before_init( $settings ) {
         array( 'title' => __( 'hideSmall', 'sovc' ), 'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', 'classes' => 'so-hide-small' ),
         array( 'title' => __( 'hideMedium', 'sovc' ), 'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', 'classes' => 'so-hide-medium' ),
         array( 'title' => __( 'hideLarge', 'sovc' ), 'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', 'classes' => 'so-hide-large' ),
-        array( 'title' => __( 'inline-linkSmall', 'sovc' ), 'inline' => 'a', 'classes' => 'so-show-small' ),
-        array( 'title' => __( 'inline-linkMedium', 'sovc' ), 'inline' => 'a', 'classes' => 'so-show-medium' ),
-        array( 'title' => __( 'inline-linkLarge', 'sovc' ), 'inline' => 'a', 'classes' => 'so-show-large' ),
-        array( 'title' => __( 'inline-no-linkSmall', 'sovc' ), 'inline' => 'span', 'classes' => 'so-hide-small' ),
-        array( 'title' => __( 'inline-no-linkMedium', 'sovc' ), 'inline' => 'span', 'classes' => 'so-hide-medium' ),
-        array( 'title' => __( 'inline-no-linkLarge', 'sovc' ), 'inline' => 'span', 'classes' => 'so-hide-large' ),
+        array( 'title' => __( 'linkSmall', 'sovc' ), 'inline' => 'a', 'classes' => 'so-show-small' ),
+        array( 'title' => __( 'linkMedium', 'sovc' ), 'inline' => 'a', 'classes' => 'so-show-medium' ),
+        array( 'title' => __( 'linkLarge', 'sovc' ), 'inline' => 'a', 'classes' => 'so-show-large' ),
+        array( 'title' => __( 'inline-showSmall', 'sovc' ), 'inline' => 'span', 'classes' => 'so-show-small' ),
+        array( 'title' => __( 'inline-showMedium', 'sovc' ), 'inline' => 'span', 'classes' => 'so-show-medium' ),
+        array( 'title' => __( 'inline-showLarge', 'sovc' ), 'inline' => 'span', 'classes' => 'so-show-large' ),
+        array( 'title' => __( 'inline-hideSmall', 'sovc' ), 'inline' => 'span', 'classes' => 'so-hide-small' ),
+        array( 'title' => __( 'inline-hideMedium', 'sovc' ), 'inline' => 'span', 'classes' => 'so-hide-medium' ),
+        array( 'title' => __( 'inline-hideLarge', 'sovc' ), 'inline' => 'span', 'classes' => 'so-hide-large' ),
     );
     $settings['style_formats'] = json_encode( $style_formats );
 

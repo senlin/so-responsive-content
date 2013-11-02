@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the SO Responsive Content package.
 msgid ""
 msgstr ""
-"Project-Id-Version: SO Responsive Content 0.2\n"
+"Project-Id-Version: SO Responsive Content 0.3\n"
 "Report-Msgid-Bugs-To: https://github.com/so-wp/so-visibility-classes/issues\n"
-"POT-Creation-Date: 2013-10-23 14:33:25+08:00\n"
+"POT-Creation-Date: 2013-11-02 22:18:53+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,57 +24,116 @@ msgstr ""
 
 #: so-visibility-classes.php:128
 msgid ""
-"With the plugin activated in the Edit Post screen you will see a new \"Styles"
-"\"-menu added to the Visual Editor.<br />The drop down contains 6 different "
-"options, each with:"
+"With the plugin activated you will see a new \"Styles\"-menu added to the "
+"Visual Editor.<br />The drop down contains 15 different options:"
 msgstr ""
 
 #: so-visibility-classes.php:130
+msgid "For Paragraphs"
+msgstr ""
+
+#: so-visibility-classes.php:132 so-visibility-classes.php:181
 msgid "showSmall (this class is visible on a browser width of up to 768px)"
 msgstr ""
 
-#: so-visibility-classes.php:131
+#: so-visibility-classes.php:133 so-visibility-classes.php:182
 msgid ""
 "showMedium (this class is visible on a browser width between 768px and "
 "1280px)"
 msgstr ""
 
-#: so-visibility-classes.php:132
+#: so-visibility-classes.php:134 so-visibility-classes.php:183
 msgid "showLarge (this class is visible on a browser width from 1280px up)"
 msgstr ""
 
-#: so-visibility-classes.php:133
+#: so-visibility-classes.php:135 so-visibility-classes.php:184
 msgid "hideSmall (this class is hidden on a browser width of up to 768px)"
 msgstr ""
 
-#: so-visibility-classes.php:134
+#: so-visibility-classes.php:136 so-visibility-classes.php:185
 msgid ""
 "hideMedium (this class is hidden on a browser width between 768px and 1280px)"
 msgstr ""
 
-#: so-visibility-classes.php:135
+#: so-visibility-classes.php:137 so-visibility-classes.php:186
 msgid "hideLarge (this class is hidden on a browser width from 1280px up)"
 msgstr ""
 
-#: so-visibility-classes.php:145
+#: so-visibility-classes.php:140
+msgid ""
+"For Links (only show, because hiding can be done with the inline classes "
+"below)"
+msgstr ""
+
+#: so-visibility-classes.php:142
+msgid "linkSmall (this class is visible on a browser width of up to 768px)"
+msgstr ""
+
+#: so-visibility-classes.php:143
+msgid ""
+"linkMedium (this class is visible on a browser width between 768px and "
+"1280px)"
+msgstr ""
+
+#: so-visibility-classes.php:144
+msgid "linkLarge (this class is visible on a browser width from 1280px up)"
+msgstr ""
+
+#: so-visibility-classes.php:147
+msgid "For inline spans"
+msgstr ""
+
+#: so-visibility-classes.php:149
+msgid ""
+"inline-showSmall (this class is visible on a browser width of up to 768px)"
+msgstr ""
+
+#: so-visibility-classes.php:150
+msgid ""
+"inline-showMedium (this class is visible on a browser width between 768px "
+"and 1280px)"
+msgstr ""
+
+#: so-visibility-classes.php:151
+msgid ""
+"inline-showLarge (this class is visible on a browser width from 1280px up)"
+msgstr ""
+
+#: so-visibility-classes.php:152
+msgid ""
+"inline-hideSmall (this class is hidden on a browser width of up to 768px)"
+msgstr ""
+
+#: so-visibility-classes.php:153
+msgid ""
+"inline-hideMedium (this class is hidden on a browser width between 768px and "
+"1280px)"
+msgstr ""
+
+#: so-visibility-classes.php:154
+msgid ""
+"inline-hideLarge (this class is hidden on a browser width from 1280px up)"
+msgstr ""
+
+#: so-visibility-classes.php:165
 msgid ""
 "Once you have selected a visibility class, the plugin shows that in 3 "
 "locations:"
 msgstr ""
 
-#: so-visibility-classes.php:150
+#: so-visibility-classes.php:170
 msgid "1. as selected in the drop down menu"
 msgstr ""
 
-#: so-visibility-classes.php:151
+#: so-visibility-classes.php:171
 msgid "2. with a “button” in front of the selector"
 msgstr ""
 
-#: so-visibility-classes.php:152
+#: so-visibility-classes.php:172
 msgid "3. in the path"
 msgstr ""
 
-#: so-visibility-classes.php:155
+#: so-visibility-classes.php:175
 msgid ""
 "It is good to know that the only function of this \"button\" is to show you "
 "that the element behind it has one of the visibility classes.<br /> For the "
@@ -82,13 +141,28 @@ msgid ""
 "\"helper\"."
 msgstr ""
 
-#: so-visibility-classes.php:157
+#: so-visibility-classes.php:179
+msgid ""
+"Since version 0.3 of the plugin, you will also see 6 different buttons added "
+"to the Text Editor:"
+msgstr ""
+
+#: so-visibility-classes.php:189
+msgid "These buttons work a little bit different than on the Visual Editor."
+msgstr ""
+
+#: so-visibility-classes.php:190
+msgid ""
+"They simply add a class, so you will have to write all elements yourself."
+msgstr ""
+
+#: so-visibility-classes.php:200
 msgid ""
 "You can use the visibility classes on virtually all elements: p, h1, h2, h3, "
 "h4, h5, h6, td, th, div, ul, ol, li, table and img."
 msgstr ""
 
-#: so-visibility-classes.php:159
+#: so-visibility-classes.php:202
 msgid ""
 "Although possible, <strong>I strongly discourage</strong> using the classes "
 "with images. The reason is that the SO Responsive Content plugin only uses "
@@ -100,78 +174,114 @@ msgid ""
 msgstr ""
 
 #. Translators: variable is link to WP Repo
-#: so-visibility-classes.php:167
+#: so-visibility-classes.php:208
 msgid ""
 "If you have found this plugin at all useful, please give it a favourable "
 "rating in the <a href=\"%s\" title=\"Rate this plugin!\">WordPress Plugin "
 "Repository</a>."
 msgstr ""
 
-#: so-visibility-classes.php:177
+#: so-visibility-classes.php:218
 msgid "About the Author"
 msgstr ""
 
-#: so-visibility-classes.php:183
+#: so-visibility-classes.php:224
 msgid ""
 "Hi, my name is Piet Bos, I hope you like this plugin! Please check out any "
 "of my other plugins on <a href=\"%s\" title=\"SO WP Plugins\">SO WP Plugins</"
 "a>. You can find out more information about me via the following links:"
 msgstr ""
 
-#: so-visibility-classes.php:189
+#: so-visibility-classes.php:230
 msgid "Senlin Online"
 msgstr ""
 
-#: so-visibility-classes.php:190
+#: so-visibility-classes.php:231
 msgid "WP Tips"
 msgstr ""
 
-#: so-visibility-classes.php:191
+#: so-visibility-classes.php:232
 msgid "Google+"
 msgstr ""
 
-#: so-visibility-classes.php:192
+#: so-visibility-classes.php:233
 msgid "LinkedIn"
 msgstr ""
 
-#: so-visibility-classes.php:193
+#: so-visibility-classes.php:234
 msgid "Twitter: @piethfbos"
 msgstr ""
 
-#: so-visibility-classes.php:194
+#: so-visibility-classes.php:235
 msgid "Github"
 msgstr ""
 
-#: so-visibility-classes.php:195
+#: so-visibility-classes.php:236
 msgid "WordPress.org Profile"
 msgstr ""
 
-#: so-visibility-classes.php:216
+#: so-visibility-classes.php:255
 msgid "Read before using"
 msgstr ""
 
-#: so-visibility-classes.php:246
+#: so-visibility-classes.php:285
 msgid "showSmall"
 msgstr ""
 
-#: so-visibility-classes.php:247
+#: so-visibility-classes.php:286
 msgid "showMedium"
 msgstr ""
 
-#: so-visibility-classes.php:248
+#: so-visibility-classes.php:287
 msgid "showLarge"
 msgstr ""
 
-#: so-visibility-classes.php:249
+#: so-visibility-classes.php:288
 msgid "hideSmall"
 msgstr ""
 
-#: so-visibility-classes.php:250
+#: so-visibility-classes.php:289
 msgid "hideMedium"
 msgstr ""
 
-#: so-visibility-classes.php:251
+#: so-visibility-classes.php:290
 msgid "hideLarge"
+msgstr ""
+
+#: so-visibility-classes.php:291
+msgid "linkSmall"
+msgstr ""
+
+#: so-visibility-classes.php:292
+msgid "linkMedium"
+msgstr ""
+
+#: so-visibility-classes.php:293
+msgid "linkLarge"
+msgstr ""
+
+#: so-visibility-classes.php:294
+msgid "inline-showSmall"
+msgstr ""
+
+#: so-visibility-classes.php:295
+msgid "inline-showMedium"
+msgstr ""
+
+#: so-visibility-classes.php:296
+msgid "inline-showLarge"
+msgstr ""
+
+#: so-visibility-classes.php:297
+msgid "inline-hideSmall"
+msgstr ""
+
+#: so-visibility-classes.php:298
+msgid "inline-hideMedium"
+msgstr ""
+
+#: so-visibility-classes.php:299
+msgid "inline-hideLarge"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
@@ -184,8 +294,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"With the SO Responsive Content plugin you can easily adjust the length "
-"of your content for different devices by making use of visibility classes."
+"With the SO Responsive Content plugin you can easily adjust the length of "
+"your content for different devices by making use of visibility classes."
 msgstr ""
 
 #. Author of the plugin/theme

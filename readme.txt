@@ -4,7 +4,7 @@ Tags: responsive, content, visual editor, tinymce, text editor, content, classes
 Donate link: http://senl.in/PPd0na
 Requires at least: 3.6
 Tested up to: 3.7.1
-Stable tag: 0.3
+Stable tag: 0.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -82,6 +82,9 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 5. SO Responsive Content front end small (<768px).
 
 == Changelog ==
+= 0.3.1 =
+* update language files
+
 = 0.3 =
 * make correction to version check function to actually output the correct plugin name
 * enhance styling: when class is inside a paragraph `display: block;` should be `display: inline-block;`
@@ -102,7 +105,7 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 * Initial release on Github.
 
 == Upgrade Notice ==
-= 0.3 =
+= 0.3.1 =
 * Additional Classes for Visual Editor and now also classes for Text Editor.
 
 = 0.1 =

@@ -3,7 +3,7 @@
  * Plugin URI: https://github.com/so-wp/so-visibility-classes
  * Description: With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
  * Author: Piet Bos
- * Version: 0.2
+ * Version: 0.3
  * Author URI: http://senlinonline.com
  *
  * Copywrite 2013 Piet Bos (piethfbos@gmail.com)
@@ -125,16 +125,36 @@ function sovc_render_form() { ?>
 		
 		<h2><?php _e( 'SO Responsive Content Instructions', 'sovc' ); ?></h2>
 		
-		<p><?php _e( 'With the plugin activated in the Edit Post screen you will see a new "Styles"-menu added to the Visual Editor.<br />The drop down contains 6 different options, each with:', 'sovc' ); ?></p>
+		<p><?php _e( 'With the plugin activated you will see a new "Styles"-menu added to the Visual Editor.<br />The drop down contains 15 different options:', 'sovc' ); ?></p>
 		<ul style="list-style: disc inside none;">
-			<li><?php _e( 'showSmall (this class is visible on a browser width of up to 768px)', 'sovc' ); ?></li>
-			<li><?php _e( 'showMedium (this class is visible on a browser width between 768px and 1280px)', 'sovc' ); ?></li>
-			<li><?php _e( 'showLarge (this class is visible on a browser width from 1280px up)', 'sovc' ); ?></li>
-			<li><?php _e( 'hideSmall (this class is hidden on a browser width of up to 768px)', 'sovc' ); ?></li>
-			<li><?php _e( 'hideMedium (this class is hidden on a browser width between 768px and 1280px)', 'sovc' ); ?></li>
-			<li><?php _e( 'hideLarge (this class is hidden on a browser width from 1280px up)', 'sovc' ); ?></li>
+			<li><?php _e( 'For Paragraphs', 'sovc' ); ?>
+				<ul style="list-style: disc inside none;">
+					<li><?php _e( 'showSmall (this class is visible on a browser width of up to 768px)', 'sovc' ); ?></li>
+					<li><?php _e( 'showMedium (this class is visible on a browser width between 768px and 1280px)', 'sovc' ); ?></li>
+					<li><?php _e( 'showLarge (this class is visible on a browser width from 1280px up)', 'sovc' ); ?></li>
+					<li><?php _e( 'hideSmall (this class is hidden on a browser width of up to 768px)', 'sovc' ); ?></li>
+					<li><?php _e( 'hideMedium (this class is hidden on a browser width between 768px and 1280px)', 'sovc' ); ?></li>
+					<li><?php _e( 'hideLarge (this class is hidden on a browser width from 1280px up)', 'sovc' ); ?></li>
+				</ul>
+			</li>
+			<li><?php _e( 'For Links (only show, because hiding can be done with the inline classes below)', 'sovc' ); ?>
+				<ul style="list-style: disc inside none;">
+					<li><?php _e( 'linkSmall (this class is visible on a browser width of up to 768px)', 'sovc' ); ?></li>
+					<li><?php _e( 'linkMedium (this class is visible on a browser width between 768px and 1280px)', 'sovc' ); ?></li>
+					<li><?php _e( 'linkLarge (this class is visible on a browser width from 1280px up)', 'sovc' ); ?></li>
+				</ul>
+			</li>
+			<li><?php _e( 'For inline spans', 'sovc' ); ?>
+				<ul style="list-style: disc inside none;">
+					<li><?php _e( 'inline-showSmall (this class is visible on a browser width of up to 768px)', 'sovc' ); ?></li>
+					<li><?php _e( 'inline-showMedium (this class is visible on a browser width between 768px and 1280px)', 'sovc' ); ?></li>
+					<li><?php _e( 'inline-showLarge (this class is visible on a browser width from 1280px up)', 'sovc' ); ?></li>
+					<li><?php _e( 'inline-hideSmall (this class is hidden on a browser width of up to 768px)', 'sovc' ); ?></li>
+					<li><?php _e( 'inline-hideMedium (this class is hidden on a browser width between 768px and 1280px)', 'sovc' ); ?></li>
+					<li><?php _e( 'inline-hideLarge (this class is hidden on a browser width from 1280px up)', 'sovc' ); ?></li>
+				</ul>
+			</li>
 		</ul>
-		
 		<?php
 	$screenshot_menu_url = plugins_url( 'images/styles-dropdown-menu.png', __FILE__ );
 	$screenshot_editor_url = plugins_url( 'images/visual-editor.png', __FILE__ );
@@ -153,6 +173,29 @@ function sovc_render_form() { ?>
 		</ul>
 		
 		<p><?php _e( 'It is good to know that the only function of this "button" is to show you that the element behind it has one of the visibility classes.<br /> For the rest it does not do anything to your content; you can therefore see it as a "helper".', 'sovc' ); ?></p>
+		
+		<hr />
+		
+		<p><?php _e( 'Since version 0.3 of the plugin, you will also see 6 different buttons added to the Text Editor:', 'sovc' ); ?></p>
+			<ul style="list-style: disc inside none;">
+				<li><?php _e( 'showSmall (this class is visible on a browser width of up to 768px)', 'sovc' ); ?></li>
+				<li><?php _e( 'showMedium (this class is visible on a browser width between 768px and 1280px)', 'sovc' ); ?></li>
+				<li><?php _e( 'showLarge (this class is visible on a browser width from 1280px up)', 'sovc' ); ?></li>
+				<li><?php _e( 'hideSmall (this class is hidden on a browser width of up to 768px)', 'sovc' ); ?></li>
+				<li><?php _e( 'hideMedium (this class is hidden on a browser width between 768px and 1280px)', 'sovc' ); ?></li>
+				<li><?php _e( 'hideLarge (this class is hidden on a browser width from 1280px up)', 'sovc' ); ?></li>
+			</ul>
+		
+		<p><?php _e( 'These buttons work a little bit different than on the Visual Editor.', 'sovc' ); ?><br />
+		<?php _e( 'They simply add a class, so you will have to write all elements yourself.', 'sovc' ); ?></p>
+
+		<?php
+	$screenshot_text_editor = plugins_url( 'images/text-editor-buttons.png', __FILE__ );
+		?>
+
+		<img src="<?php echo $screenshot_text_editor; ?>" />
+		
+		<hr />
 		
 		<p><?php _e( 'You can use the visibility classes on virtually all elements: p, h1, h2, h3, h4, h5, h6, td, th, div, ul, ol, li, table and img.', 'sovc' ); ?></p>
 		
@@ -259,6 +302,28 @@ function so_visibility_classes_mce_before_init( $settings ) {
 
     return $settings;
 }
+
+/**
+ * Now also add these options to the Text Editor
+ * source: http://codex.wordpress.org/Quicktags_API
+ *
+ * @since 0.3
+ */
+function sovc_add_quicktags() {
+    if (wp_script_is('quicktags')){
+?>
+    <script type="text/javascript">
+    QTags.addButton( 'inline_showSmall', 'showSmall', ' class="so-show-small"', '', 'class', 'showSmall', 911 );
+    QTags.addButton( 'inline_showMedium', 'showMedium', ' class="so-show-medium"', '', 'class', 'showMedium', 912 );
+    QTags.addButton( 'inline_showLarge', 'showLarge', ' class="so-show-large"', '', 'class', 'showLarge', 913 );
+    QTags.addButton( 'inline_hideSmall', 'hideSmall', ' class="so-hide-small"', '', 'class', 'hideSmall', 914 );
+    QTags.addButton( 'inline_hideMedium', 'hideMedium', ' class="so-hide-medium"', '', 'class', 'hideMedium', 915 );
+    QTags.addButton( 'inline_hideLarge', 'hideLarge', ' class="so-hide-large"', '', 'class', 'hideLarge', 916 );
+    </script>
+<?php
+    }
+}
+add_action( 'admin_print_footer_scripts', 'sovc_add_quicktags' ); 
 
 /**
  * Add stylesheet for frontend

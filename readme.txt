@@ -1,10 +1,10 @@
 === SO Responsive Content ===
 Contributors: senlin
-Tags: responsive, content, visual editor, tinymce, content, classes, browser, tablet, phone, mobile, desktop, laptop, ipad, iphone, android
+Tags: responsive, content, visual editor, tinymce, text editor, content, classes, browser, tablet, phone, mobile, desktop, laptop, ipad, iphone, android
 Donate link: http://senl.in/PPd0na
 Requires at least: 3.6
-Tested up to: 3.7
-Stable tag: 0.2
+Tested up to: 3.7.1
+Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,6 +19,14 @@ The SO Responsive Content plugin adds a Styles drop down menu to the first line 
 1. as selected in the drop down menu
 2. with a "button" in front of the selector (the only function of this "button" is to show you that the element behind it has one of the visibility classes)
 3. in the path
+
+There are 15 visibility classes in the Styles menu on the Visual Editor:
+
+* 6 for paragraphs (3 to show and 3 to hide)
+* 3 for links (only to show as hiding can be done with the inline classes below)
+* 6 for spans (3 to show and 3 to hide)
+
+Since version 0.3 I have added 6 buttons to the Text Editor as well. For flexibility purposes these buttons (3 for showing and 3 for hiding) only add a class, so you can add the element yourself. 
 
 The plugin already comes with all the styles necessary to show the elements on or hide them from the front end, so all you need to do is save your Post, Page or other Post Type and visit your site from a few different devices (or resize your browser) to see your content change depending on the width of the browser!
 
@@ -54,11 +62,9 @@ Please open an issue over at [Github](https://github.com/so-wp/so-visibility-cla
 == Other Notes ==
 = Usage =
 
-You can use the SO Responsive Content plugin basically for any Post Type, but it is important to know that the Styles drop down menu is only visible in the Visual Editor. Therefore it is important that you don't disable the Visual Editor.
+You can use the SO Responsive Content plugin basically for any Post Type.
 
-It is possible to use the classes in the Text Editor, you can have a look for yourself which classes you need to be using then.
-
-Although possible, **I strongly discourage** using the classes with images. The reason is that the SO Responsive Content plugin only uses media queries with `display: block;` and `display: none;`. If you were to add a large image to only show on large screens, a medium image to show on tablets and a small image to show on smart phones, then the person visiting your site using a phone has to download all 3 images, which can have a major impact on the data plan of the visitor! 
+Although possible, **I strongly discourage** using the classes with images. The reason is that the SO Responsive Content plugin only uses media queries with `display: block;`, `display: inline-block;` and `display: none;`. If you were to add a large image to only show on large screens, a medium image to show on tablets and a small image to show on smart phones, then the person visiting your site using a phone has to download all 3 images, which can have a major impact on the data plan of the visitor! 
 
 To conditionally show images it is much, much better to implement the [MobileDetect script](http://mobiledetect.net) on your site.
 
@@ -69,12 +75,20 @@ Naturally the SO Responsive Content plugin has been fully internationalized. In 
 The plugin only contains 38 strings (of which many only 1 word); it would be a awesome if you can help me translate it into other languages!
 
 == Screenshots ==
-1. SO Responsive Content back end.
-2. SO Responsive Content front end large (>1280px).
-3. SO Responsive Content front end medium (>768px <1280px).
-4. SO Responsive Content front end small (<768px).
+1. SO Responsive Content back end Visual Editor.
+2. SO Responsive Content back end Text Editor.
+3. SO Responsive Content front end large (>1280px).
+4. SO Responsive Content front end medium (>768px <1280px).
+5. SO Responsive Content front end small (<768px).
 
 == Changelog ==
+= 0.3 =
+* make correction to version check function to actually output the correct plugin name
+* enhance styling: when class is inside a paragraph `display: block;` should be `display: inline-block;`
+* 3 additional styles for links
+* 6 additional styles for inline text (in `<span>`s)
+* 6 additional styles for the text editor
+
 = 0.2 =
 * name change to SO Responsive Content (from SO Visibility Classes)
 * update readme files with new name
@@ -88,5 +102,8 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 * Initial release on Github.
 
 == Upgrade Notice ==
+= 0.3 =
+* Additional Classes for Visual Editor and now also classes for Text Editor.
+
 = 0.1 =
 * Initial release.

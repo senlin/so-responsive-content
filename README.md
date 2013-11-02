@@ -1,7 +1,7 @@
 SO Responsive Content
 =====================
 
-###### Version 0.3beta
+###### Version 0.3
 ###### requires at least WordPress 3.6
 ###### tested up to 3.7.1
 ###### Author: [Piet Bos](https://github.com/senlin)
@@ -41,12 +41,13 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
-### 0.3beta
+### 0.3
 
 * make correction to version check function to actually output the correct plugin name
 * enhance styling: when class is inside a paragraph `display: block;` should be `display: inline-block;`
 * 3 additional styles for links
 * 6 additional styles for inline text (in `<span>`s)
+* 6 additional styles for the text editor
 
 ### 0.2
 

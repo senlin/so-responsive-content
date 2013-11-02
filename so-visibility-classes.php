@@ -1,5 +1,5 @@
 <?php
-/* Plugin Name: SO Responsive Content (SO Visibility Classes)
+/* Plugin Name: SO Responsive Content
  * Plugin URI: https://github.com/so-wp/so-visibility-classes
  * Description: With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
  * Author: Piet Bos

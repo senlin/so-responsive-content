@@ -4,7 +4,7 @@ Tags: responsive, content, visual editor, tinymce, text editor, content, classes
 Donate link: http://senl.in/PPd0na
 Requires at least: 3.6
 Tested up to: 3.7.1
-Stable tag: 0.3.1
+Stable tag: 0.3.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -82,6 +82,11 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 5. SO Responsive Content front end small (<768px).
 
 == Changelog ==
+
+= 0.3.2 =
+
+* change text domain to prepare for language packs (via Otto - http://otto42.com/el)
+
 = 0.3.1 =
 * update language files
 

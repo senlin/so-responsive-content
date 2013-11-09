@@ -1,7 +1,7 @@
 SO Responsive Content
 =====================
 
-###### Version 0.3.1
+###### Version 0.3.2-beta
 ###### requires at least WordPress 3.6
 ###### tested up to 3.7.1
 ###### Author: [Piet Bos](https://github.com/senlin)
@@ -40,6 +40,10 @@ This repo is open to _any_ kind of contributions.
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 0.3.2-beta
+
+* change text domain to prepare for language packs (via Otto - http://otto42.com/el)
 
 ### 0.3.1
 

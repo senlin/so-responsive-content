@@ -3,8 +3,8 @@ Contributors: senlin
 Tags: responsive, content, visual editor, tinymce, text editor, content, classes, browser, tablet, phone, mobile, desktop, laptop, ipad, iphone, android
 Donate link: http://senl.in/PPd0na
 Requires at least: 3.6
-Tested up to: 3.7.1
-Stable tag: 0.3.2
+Tested up to: 3.8
+Stable tag: 0.3.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -70,9 +70,12 @@ To conditionally show images it is much, much better to implement the [MobileDet
 
 = Languages =
 
-Naturally the SO Responsive Content plugin has been fully internationalized. In the languages directory you will find the .pot file and the .po file. I already have added the Dutch translation so in that same directory you will also find the sovc-nl_NL.po and sovc-nl_NL.mo files.
+Naturally the SO Responsive Content plugin has been fully internationalized. In the languages directory you will find the .pot file and the .po file. I already have added the Dutch translation files.
 
 The plugin only contains 38 strings (of which many only 1 word); it would be a awesome if you can help me translate it into other languages!
+
+* Dutch translation (nl_NL) by [Piet Bos](http://profiles.wordpress.org/senlin/) (last updated 0.3.3)
+* Serbian translation (sr_RS) by Borisa Djuraskovic (last updated 0.3.3)
 
 == Screenshots ==
 1. SO Responsive Content back end Visual Editor.
@@ -82,6 +85,12 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 5. SO Responsive Content front end small (<768px).
 
 == Changelog ==
+
+= 0.3.3 =
+
+* add Serbian translation files (thank you Borisa Djuraskovic)
+* add settings stylesheet to replace inline styling settings page
+* move stylesheets to separate directory (css)
 
 = 0.3.2 =
 

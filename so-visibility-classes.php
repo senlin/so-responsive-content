@@ -3,7 +3,7 @@
  * Plugin URI: https://github.com/so-wp/so-visibility-classes
  * Description: With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
  * Author: Piet Bos
- * Version: 0.3.2
+ * Version: 0.3.3
  * Author URI: http://senlinonline.com
  * Text Domain: so-visibility-classes
  * Domain Path: /languages
@@ -91,6 +91,14 @@ add_action( 'admin_menu', 'sovc_add_options_page' );
 
 add_filter( 'plugin_action_links', 'sovc_plugin_action_links', 10, 2 );
 
+add_action( 'admin_print_footer_scripts', 'sovc_add_quicktags' );
+
+add_action( 'wp_enqueue_scripts', 'so_visibility_classes_load_css' );
+
+add_filter( 'mce_css', 'so_visibility_classes_mce_css' );
+
+add_action( 'admin_enqueue_scripts', 'so_visibility_classes_load_custom_admin_style' );
+
 /**
  * Load the textdomain
  * 
@@ -120,17 +128,15 @@ function sovc_add_options_page() {
  */
 function sovc_render_form() { ?>
 
-	<div class="wrap">
+	<div class="sovc wrap">
 		
-		<!-- Display Plugin Icon, Header, and Description -->
-		<div class="icon32" id="icon-options-general"><br></div>
-		
+		<!-- Display Plugin Header and Description -->
 		<h2><?php _e( 'SO Responsive Content Instructions', 'so-visibility-classes' ); ?></h2>
 		
 		<p><?php _e( 'With the plugin activated you will see a new "Styles"-menu added to the Visual Editor.<br />The drop down contains 15 different options:', 'so-visibility-classes' ); ?></p>
-		<ul style="list-style: disc inside none;">
-			<li><?php _e( 'For Paragraphs', 'so-visibility-classes' ); ?>
-				<ul style="list-style: disc inside none;">
+		<ul class="sovc-options-list">
+			<li class="list-item-title"><?php _e( 'For Paragraphs', 'so-visibility-classes' ); ?>
+				<ul>
 					<li><?php _e( 'showSmall (this class is visible on a browser width of up to 768px)', 'so-visibility-classes' ); ?></li>
 					<li><?php _e( 'showMedium (this class is visible on a browser width between 768px and 1280px)', 'so-visibility-classes' ); ?></li>
 					<li><?php _e( 'showLarge (this class is visible on a browser width from 1280px up)', 'so-visibility-classes' ); ?></li>
@@ -139,15 +145,15 @@ function sovc_render_form() { ?>
 					<li><?php _e( 'hideLarge (this class is hidden on a browser width from 1280px up)', 'so-visibility-classes' ); ?></li>
 				</ul>
 			</li>
-			<li><?php _e( 'For Links (only show, because hiding can be done with the inline classes below)', 'so-visibility-classes' ); ?>
-				<ul style="list-style: disc inside none;">
+			<li class="list-item-title"><?php _e( 'For Links (only show, because hiding can be done with the inline classes below)', 'so-visibility-classes' ); ?>
+				<ul>
 					<li><?php _e( 'linkSmall (this class is visible on a browser width of up to 768px)', 'so-visibility-classes' ); ?></li>
 					<li><?php _e( 'linkMedium (this class is visible on a browser width between 768px and 1280px)', 'so-visibility-classes' ); ?></li>
 					<li><?php _e( 'linkLarge (this class is visible on a browser width from 1280px up)', 'so-visibility-classes' ); ?></li>
 				</ul>
 			</li>
-			<li><?php _e( 'For inline spans', 'so-visibility-classes' ); ?>
-				<ul style="list-style: disc inside none;">
+			<li class="list-item-title"><?php _e( 'For inline spans', 'so-visibility-classes' ); ?>
+				<ul>
 					<li><?php _e( 'inline-showSmall (this class is visible on a browser width of up to 768px)', 'so-visibility-classes' ); ?></li>
 					<li><?php _e( 'inline-showMedium (this class is visible on a browser width between 768px and 1280px)', 'so-visibility-classes' ); ?></li>
 					<li><?php _e( 'inline-showLarge (this class is visible on a browser width from 1280px up)', 'so-visibility-classes' ); ?></li>
@@ -179,7 +185,7 @@ function sovc_render_form() { ?>
 		<hr />
 		
 		<p><?php _e( 'Since version 0.3 of the plugin, you will also see 6 different buttons added to the Text Editor:', 'so-visibility-classes' ); ?></p>
-			<ul style="list-style: disc inside none;">
+			<ul class="sovc-text-editor-options-list">
 				<li><?php _e( 'showSmall (this class is visible on a browser width of up to 768px)', 'so-visibility-classes' ); ?></li>
 				<li><?php _e( 'showMedium (this class is visible on a browser width between 768px and 1280px)', 'so-visibility-classes' ); ?></li>
 				<li><?php _e( 'showLarge (this class is visible on a browser width from 1280px up)', 'so-visibility-classes' ); ?></li>
@@ -203,7 +209,7 @@ function sovc_render_form() { ?>
 		
 		<p><?php _e( 'Although possible, <strong>I strongly discourage</strong> using the classes with images. The reason is that the SO Responsive Content plugin only uses media queries with <code>display: block;</code> and <code>display: none;</code>. If you were to add a large image to only show on large screens, a medium image to show on tablets and a small image to show on smart phones, then the person visiting your site using a phone has to download all 3 images, which can have a major impact on the data plan of the visitor!', 'so-visibility-classes' ); ?></p>
 
-			<p style="font-style: italic; font-weight: bold; color: #26779A;">
+			<p class="rate-this-plugin">
 				
 				<?php
 				/* Translators: variable is link to WP Repo */
@@ -214,24 +220,24 @@ function sovc_render_form() { ?>
 				
 			</p>
 			
-			<div class="postbox" style="display: block; float: left; width: 500px; margin: 30px 10px 10px 0;">
+			<div class="author postbox">
 				
-				<h3 class="hndle" style="padding: 5px;">
+				<h3 class="hndle">
 					<span><?php _e( 'About the Author', 'so-visibility-classes' ); ?></span>
 				</h3>
 				
 				<div class="inside">
-					<img src="http://www.gravatar.com/avatar/<?php echo md5( 'info@senlinonline.com' ); ?>" style="float: left; margin-right: 10px; padding: 3px; border: 1px solid #DFDFDF;"/>
-					<p style="height: 60px; padding-top: 20px">
+					<img class="author-image" src="http://www.gravatar.com/avatar/<?php echo md5( 'info@senlinonline.com' ); ?>" />
+					<p>
 						<?php printf( __( 'Hi, my name is Piet Bos, I hope you like this plugin! Please check out any of my other plugins on <a href="%s" title="SO WP Plugins">SO WP Plugins</a>. You can find out more information about me via the following links:', 'so-visibility-classes' ),
 						esc_url( 'http://so-wp.github.io/' )
 						); ?>
 					</p>
 					
-					<ul style="clear: both; margin-top: 20px;">
-						<li><a href="http://senlinonline.com/" target="_blank" title="Senlin Online"><?php _e('Senlin Online', 'sovc'); ?></a></li>
-						<li><a href="http://wpti.ps/" target="_blank" title="WP TIPS"><?php _e('WP Tips', 'sovc'); ?></a></li>
-						<li><a href="https://plus.google.com/108543145122756748887" target="_blank" title="Piet on Google+"><?php _e( 'Google+', 'so-visibility-classes' ); ?></a></li>
+					<ul>
+						<li><a href="http://senlinonline.com/" target="_blank" title="Senlin Online"><?php _e('Senlin Online', 'so-visibility-classes'); ?></a></li>
+						<li><a href="http://wpti.ps/" target="_blank" title="WP TIPS"><?php _e('WP Tips', 'so-visibility-classes'); ?></a></li>
+						<li><a href="https://plus.google.com/+PietBos" target="_blank" title="Piet on Google+"><?php _e( 'Google+', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="http://cn.linkedin.com/in/pietbos" target="_blank" title="LinkedIn profile"><?php _e( 'LinkedIn', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="http://twitter.com/SenlinOnline" target="_blank" title="Twitter"><?php _e( 'Twitter: @piethfbos', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="http://github.com/senlin" title="on Github"><?php _e( 'Github', 'so-visibility-classes' ); ?></a></li>
@@ -325,18 +331,18 @@ function sovc_add_quicktags() {
 <?php
     }
 }
-add_action( 'admin_print_footer_scripts', 'sovc_add_quicktags' ); 
+//add_action( 'admin_print_footer_scripts', 'sovc_add_quicktags' ); 
 
 /**
  * Add stylesheet for frontend
  * 
  * @since 0.1
  */
-add_action( 'wp_enqueue_scripts', 'so_visibility_classes_load_css' );
+//add_action( 'wp_enqueue_scripts', 'so_visibility_classes_load_css' );
 
 function so_visibility_classes_load_css() {
 	
-	wp_enqueue_style( 'so_visibility_classes', plugins_url( '/style.css', __FILE__ ) );
+	wp_enqueue_style( 'so_visibility_classes', plugins_url( 'css/style.css', __FILE__ ) );
 	
 }
 
@@ -346,15 +352,22 @@ function so_visibility_classes_load_css() {
  *
  * @since 0.1
  */
-add_filter( 'mce_css', 'so_visibility_classes_mce_css' );
+//add_filter( 'mce_css', 'so_visibility_classes_mce_css' );
 
 function so_visibility_classes_mce_css( $mce_css ) {
 	if ( ! empty( $mce_css ) )
 		$mce_css .= ',';
 
-	$mce_css .= plugins_url( 'editor-style.css', __FILE__ );
+	$mce_css .= plugins_url( 'css/editor-style.css', __FILE__ );
 
 	return $mce_css;
 }
+
+function so_visibility_classes_load_custom_admin_style() {
+	
+	wp_enqueue_style( 'so_visibility_classes', plugins_url( 'css/settings.css', __FILE__ ) );
+	
+}
+
 
 /** The End **/

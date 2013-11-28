@@ -1,9 +1,9 @@
 SO Responsive Content
 =====================
 
-###### Version 0.3.2
+###### Version 0.3.3
 ###### requires at least WordPress 3.6
-###### tested up to 3.7.1
+###### tested up to 3.8
 ###### Author: [Piet Bos](https://github.com/senlin)
 
 With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
@@ -19,6 +19,15 @@ Please open an issue here on [Github](https://github.com/so-wp/so-visibility-cla
 ## Contributions
 
 This repo is open to _any_ kind of contributions.
+
+## Languages
+
+Naturally the SO Responsive Content plugin has been fully internationalized. In the languages directory you will find the .pot file and the .po file. I already have added the Dutch translation files.
+
+The plugin only contains 38 strings (of which many only 1 word); it would be a awesome if you can help me translate it into other languages!
+
+* Dutch translation (nl_NL) by [Piet Bos](http://profiles.wordpress.org/senlin/) (last updated 0.3.3)
+* Serbian translation (sr_RS) by Borisa Djuraskovic (last updated 0.3.3)
 
 ## License
 
@@ -40,6 +49,12 @@ This repo is open to _any_ kind of contributions.
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 0.3.3
+
+* add Serbian translation files (thank you Borisa Djuraskovic)
+* add settings stylesheet to replace inline styling settings page
+* move stylesheets to separate directory (css)
 
 ### 0.3.2
 

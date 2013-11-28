@@ -1,0 +1,59 @@
+/**
+ * Settings Page styles
+ * 
+ * @since 0.3.3
+ */
+.sovc.wrap > h2 {
+	background: url("../images/so-icon.png") no-repeat scroll 0 10px rgba(0, 0, 0, 0);
+	padding-left: 40px;
+}
+.sovc-options-list > li.list-item-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+.sovc-options-list > li > ul {
+    list-style: none outside none;
+    margin-left: 10px;
+}
+.sovc-options-list > li > ul, .sovc-options-list > li > ul > li {
+    font-size: 13px;
+    font-weight: 400;
+}
+.sovc-text-editor-options-list {
+    list-style: disc inside none;
+}
+.rate-this-plugin {
+	color: #26779A;
+	font-style: italic;
+	font-size: 16px;
+	font-weight: bold; 
+}
+.author.postbox {
+	display: block;
+	float: left;
+	margin: 30px 10px 10px 0;
+	width: 500px;
+}
+.author.postbox .hndle {
+    background: #EEE;
+    border-bottom: 1px solid #DDD;
+    padding: 5px;
+}
+.author.postbox .inside > .author-image {
+	border: 1px solid #DFDFDF;
+	float: left;
+	margin-right: 10px;
+	padding: 3px;
+}
+.author.postbox .inside > p {
+	height: 60px;
+	padding-top: 20px;
+}
+.author.postbox .inside > ul {
+	clear: both;
+	margin-top: 20px;
+}
+.author.postbox .inside li {
+    float: left;
+    width: 50%;
+}

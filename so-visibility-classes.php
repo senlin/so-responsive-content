@@ -97,8 +97,6 @@ add_action( 'wp_enqueue_scripts', 'so_visibility_classes_load_css' );
 
 add_filter( 'mce_css', 'so_visibility_classes_mce_css' );
 
-add_action( 'admin_enqueue_scripts', 'so_visibility_classes_load_custom_admin_style' );
-
 /**
  * Load the textdomain
  * 
@@ -116,8 +114,12 @@ function sovc_init() {
  * @since 0.1
  */
 function sovc_add_options_page() {
+
+	// Add the new admin menu and page and save the returned hook suffix
+	$hook = add_options_page( 'SO Responsive Content Instructions', 'SO Responsive Content', 'manage_options', __FILE__, 'sovc_render_form' );
 	
-	add_options_page( 'SO Responsive Content Instructions', 'SO Responsive Content', 'manage_options', __FILE__, 'sovc_render_form' );
+	// Use the hook suffix to compose the hook and register an action executed when plugin's options page is loaded
+	add_action( 'admin_print_styles-' . $hook , 'so_visibility_classes_load_custom_admin_style' );
 
 }
 
@@ -365,9 +367,12 @@ function so_visibility_classes_mce_css( $mce_css ) {
 
 function so_visibility_classes_load_custom_admin_style() {
 	
-	wp_enqueue_style( 'so_visibility_classes', plugins_url( 'css/settings.css', __FILE__ ) );
+	wp_register_style( 'so_visibility_classes', plugin_dir_url( __FILE__ ) . 'css/settings.css', false, '0.3.3' );
+	wp_enqueue_style( 'so_visibility_classes' );
 	
 }
+
+
 
 
 /** The End **/

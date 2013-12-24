@@ -1,20 +1,22 @@
 SO Responsive Content
 =====================
 
-###### Version 0.3.3
+###### Last updated on 2013.12.24
 ###### requires at least WordPress 3.6
-###### tested up to 3.8
+###### tested up to WordPress 3.9-alpha
 ###### Author: [Piet Bos](https://github.com/senlin)
+###### [Stable Version](http://wordpress.org/plugins/so-visibility-classes) (via WordPress Plugins Repository)
+###### [Plugin homepage](http://so-wp.com/plugin/so-responsive-content)
 
 With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
 
-More information about Background, Implementation and Usage available via the [Wiki](https://github.com/so-wp/so-visibility-classes/wiki/_pages)
+More information about Background, Implementation and Usage available via the [Wiki](https://github.com/senlin/so-responsive-content/wiki/_pages)
 
 ## Frequently Asked Questions
 
 ### I have an issue with this plugin, where can I get support?
 
-Please open an issue here on [Github](https://github.com/so-wp/so-visibility-classes/issues)
+Please open an issue here on [Github](https://github.com/senlin/so-responsive-content/issues)
 
 ## Contributions
 
@@ -36,19 +38,24 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 
 ## Donations
 
-* Donate link: http://senl.in/PPd0na
+* Donate link: http://so-wp.com/donations
 
 ## Connect with me through
 
 [Github](https://github.com/senlin) 
 
-[Google+](http://plus.google.com/u/0/108543145122756748887) 
+[Google+](http://plus.google.com/+PietBos) 
 
 [WordPress](http://profiles.wordpress.org/senlin/) 
 
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### next version
+
+* change version number format
+* tested up to WP 3.9-alpha
 
 ### 0.3.3
 

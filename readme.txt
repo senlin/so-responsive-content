@@ -1,10 +1,10 @@
 === SO Responsive Content ===
 Contributors: senlin
 Tags: responsive, content, visual editor, tinymce, text editor, content, classes, browser, tablet, phone, mobile, desktop, laptop, ipad, iphone, android
-Donate link: http://senl.in/PPd0na
+Donate link: http://so-wp.com/donations
 Requires at least: 3.6
-Tested up to: 3.8
-Stable tag: 0.3.3
+Tested up to: 3.9-alpha
+Stable tag: 2013.12.27
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,7 +57,7 @@ Now visit the Instructions page to see what you need to know to use this plugin.
 == Frequently Asked Questions ==
 = I have an issue with this plugin, where can I get support? =
 
-Please open an issue over at [Github](https://github.com/so-wp/so-visibility-classes/issues/new), as **I will not use the support forums** here on WordPress.org
+Please open an issue over at [Github](https://github.com/senlin/so-responsive-content/issues/new), as **I will not use the support forums** here on WordPress.org
 
 == Other Notes ==
 = Usage =
@@ -85,6 +85,13 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 5. SO Responsive Content front end small (<768px).
 
 == Changelog ==
+
+= 2013.12.27 =
+
+* change px for em in frontend stylesheet (css/style.css) and make it more precise
+* change version number format
+* change links to reflect new [SO WP website](http://so-wp.com)
+* tested up to WP 3.9-alpha
 
 = 0.3.3 =
 

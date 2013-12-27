@@ -2,10 +2,11 @@
  * Front end styles
  * 
  * @since 0.1
+ * @updated for 2013.12.27
  */
 
-/* Styles for devices up to 768px wide */
-@media only screen and (max-width: 768px) {
+/* Styles for devices up to 767px wide */
+@media only screen and (max-width: 47.9375em) {
 	.so-show-small,
 	.so-hide-medium {
 		display: block;
@@ -21,8 +22,8 @@
 	}
 }
 
-/* Styles for devices from 768px - 1280px wide */
-@media only screen and (min-width: 768px) {
+/* Styles for devices from 768px wide and up */
+@media only screen and (min-width: 48em) { 
 	.so-show-medium,
 	.so-show-large {
 		display: block;
@@ -33,7 +34,8 @@
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1280px) {
+/* Styles for devices from 768px - 1279px wide */
+@media only screen and (min-width: 48em) and (max-width: 79.9375em) {
 	.so-show-small,
 	.so-show-large,
 	.so-hide-medium {
@@ -47,7 +49,8 @@
 	}
 }
 
-@media only screen and (max-width: 1280px) {
+/* Styles for devices up to 1279px wide */
+@media only screen and (max-width: 79.9375em) {
 	.so-hide-large {
 		display: block;
 	}	
@@ -60,9 +63,10 @@
 }
 
 /* Styles for devices from 1280px wide */
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 80em) {
 	.so-show-small,
 	.so-show-medium,
+	p > .so-show-medium, /* <-- should not be necessary, but for some reason is */
 	.so-hide-large {
 		display: none;
 	}

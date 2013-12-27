@@ -1,9 +1,9 @@
 <?php
 /* Plugin Name: SO Responsive Content
- * Plugin URI: https://github.com/so-wp/so-visibility-classes
+ * Plugin URI: http://so-wp.com/?p=19
  * Description: With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
  * Author: Piet Bos
- * Version: 0.3.3
+ * Version: 2013.12.27
  * Author URI: http://senlinonline.com
  * Text Domain: so-visibility-classes
  * Domain Path: /languages
@@ -176,11 +176,11 @@ function sovc_render_form() { ?>
 		
 		<img src="<?php echo $screenshot_editor_url; ?>" />
 		
-		<ul>
-			<li><?php _e( '1. as selected in the drop down menu', 'so-visibility-classes' ); ?></li>
-			<li><?php _e( '2. with a “button” in front of the selector', 'so-visibility-classes' ); ?></li>
-			<li><?php _e( '3. in the path', 'so-visibility-classes' ); ?></li>
-		</ul>
+		<ol>
+			<li><?php _e( 'as selected in the drop down menu', 'so-visibility-classes' ); ?></li>
+			<li><?php _e( 'with a “button” in front of the selector', 'so-visibility-classes' ); ?></li>
+			<li><?php _e( 'in the path', 'so-visibility-classes' ); ?></li>
+		</ol>
 		
 		<p><?php _e( 'It is good to know that the only function of this "button" is to show you that the element behind it has one of the visibility classes.<br /> For the rest it does not do anything to your content; you can therefore see it as a "helper".', 'so-visibility-classes' ); ?></p>
 		
@@ -209,7 +209,7 @@ function sovc_render_form() { ?>
 		
 		<p><?php _e( 'You can use the visibility classes on virtually all elements: p, h1, h2, h3, h4, h5, h6, td, th, div, ul, ol, li, table and img.', 'so-visibility-classes' ); ?></p>
 		
-		<p><?php _e( 'Although possible, <strong>I strongly discourage</strong> using the classes with images. The reason is that the SO Responsive Content plugin only uses media queries with <code>display: block;</code> and <code>display: none;</code>. If you were to add a large image to only show on large screens, a medium image to show on tablets and a small image to show on smart phones, then the person visiting your site using a phone has to download all 3 images, which can have a major impact on the data plan of the visitor!', 'so-visibility-classes' ); ?></p>
+		<p><?php _e( 'Although possible, <strong>I strongly discourage</strong> using the classes with images. The reason is that the SO Responsive Content plugin only uses media queries with <code>display: block;</code>, <code>display: inline-block;</code> and <code>display: none;</code>. If you were to add a large image to only show on large screens, a medium image to show on tablets and a small image to show on smart phones, then the person visiting your site using a phone has to download all 3 images, which can have a major impact on the data plan of the visitor!', 'so-visibility-classes' ); ?></p>
 
 			<p class="rate-this-plugin">
 				
@@ -232,7 +232,7 @@ function sovc_render_form() { ?>
 					<img class="author-image" src="http://www.gravatar.com/avatar/<?php echo md5( 'info@senlinonline.com' ); ?>" />
 					<p>
 						<?php printf( __( 'Hi, my name is Piet Bos, I hope you like this plugin! Please check out any of my other plugins on <a href="%s" title="SO WP Plugins">SO WP Plugins</a>. You can find out more information about me via the following links:', 'so-visibility-classes' ),
-						esc_url( 'http://so-wp.github.io/' )
+						esc_url( 'http://so-wp.com/' )
 						); ?>
 					</p>
 					
@@ -241,7 +241,7 @@ function sovc_render_form() { ?>
 						<li><a href="http://wpti.ps/" target="_blank" title="WP TIPS"><?php _e('WP Tips', 'so-visibility-classes'); ?></a></li>
 						<li><a href="https://plus.google.com/+PietBos" target="_blank" title="Piet on Google+"><?php _e( 'Google+', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="http://cn.linkedin.com/in/pietbos" target="_blank" title="LinkedIn profile"><?php _e( 'LinkedIn', 'so-visibility-classes' ); ?></a></li>
-						<li><a href="http://twitter.com/SenlinOnline" target="_blank" title="Twitter"><?php _e( 'Twitter: @piethfbos', 'so-visibility-classes' ); ?></a></li>
+						<li><a href="http://twitter.com/piethfbos" target="_blank" title="Twitter"><?php _e( 'Twitter: @piethfbos', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="http://github.com/senlin" title="on Github"><?php _e( 'Github', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="http://profiles.wordpress.org/senlin/" title="on WordPress.org"><?php _e( 'WordPress.org Profile', 'so-visibility-classes' ); ?></a></li>
 					</ul>
@@ -371,8 +371,4 @@ function so_visibility_classes_load_custom_admin_style() {
 	wp_enqueue_style( 'so_visibility_classes' );
 	
 }
-
-
-
-
 /** The End **/

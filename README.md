@@ -28,8 +28,8 @@ Naturally the SO Responsive Content plugin has been fully internationalized. In 
 
 The plugin only contains 38 strings (of which many only 1 word); it would be a awesome if you can help me translate it into other languages!
 
-* Dutch translation (nl_NL) by [Piet Bos](https://github.com/senlin/) (last updated 0.3.3)
-* Serbian translation (sr_RS) by Borisa Djuraskovic (last updated 0.3.3)
+* Dutch translation (nl_NL) by [Piet Bos](https://github.com/senlin/) (last updated November 28, 2013 - 0.3.3)
+* Serbian translation (sr_RS) by Borisa Djuraskovic (last updated November 28, 2013 - 0.3.3)
 
 ## License
 

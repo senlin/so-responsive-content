@@ -51,11 +51,13 @@ Done!
 Now visit the Instructions page to see what you need to know to use this plugin.
 
 == Frequently Asked Questions ==
+
 = I have an issue with this plugin, where can I get support? =
 
 Please open an issue over at [Github](https://github.com/senlin/so-responsive-content/issues/new), as **I will not use the support forums** here on WordPress.org
 
 == Other Notes ==
+
 = Usage =
 
 You can use the SO Responsive Content plugin basically for any Post Type.

@@ -333,7 +333,6 @@ function sovc_add_quicktags() {
 <?php
     }
 }
-//add_action( 'admin_print_footer_scripts', 'sovc_add_quicktags' ); 
 
 /**
  * Add stylesheet for frontend
@@ -367,7 +366,7 @@ function so_visibility_classes_mce_css( $mce_css ) {
 
 function so_visibility_classes_load_custom_admin_style() {
 	
-	wp_register_style( 'so_visibility_classes', plugin_dir_url( __FILE__ ) . 'css/settings.css', false, '0.3.3' );
+	wp_register_style( 'so_visibility_classes', plugin_dir_url( __FILE__ ) . 'css/settings.css', false, '2013.12.27' );
 	wp_enqueue_style( 'so_visibility_classes' );
 	
 }

@@ -50,6 +50,10 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 
 [Website](http://senlinonline.com)
 
+## TODO
+
+issue[#1](https://github.com/senlin/so-responsive-content/issues/1)
+
 ## Changelog
 
 ### 2013.12.27

@@ -320,7 +320,7 @@ function so_visibility_classes_mce_before_init( $settings ) {
  * @since 0.3
  */
 function sovc_add_quicktags() {
-    if (wp_script_is('quicktags')){
+    if ( wp_script_is( 'quicktags' ) ) {
 ?>
     <script type="text/javascript">
     QTags.addButton( 'inline_showSmall', 'showSmall', ' class="so-show-small"', '', 'class', 'showSmall', 911 );

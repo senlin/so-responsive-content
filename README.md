@@ -1,7 +1,7 @@
 SO Responsive Content
 =====================
 
-###### Last updated on 2013.12.27
+###### Last updated on 2014.1.20
 ###### requires at least WordPress 3.6
 ###### tested up to WordPress 3.9-alpha
 ###### Author: [Piet Bos](https://github.com/senlin)
@@ -55,6 +55,10 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 issue[#1](https://github.com/senlin/so-responsive-content/issues/1)
 
 ## Changelog
+
+### 2014.1.20
+
+* run test for WP 3.9 release due to upgrade to TinyMCE 4.x
 
 ### 2013.12.27
 

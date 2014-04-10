@@ -73,7 +73,7 @@ Naturally the SO Responsive Content plugin has been fully internationalized. In 
 The plugin only contains 38 strings (of which many only 1 word); it would be a awesome if you can help me translate it into other languages!
 
 * Dutch translation (nl_NL) by [Piet Bos](http://profiles.wordpress.org/senlin/) (last updated April 10, 2014 - 2014.4.10)
-* Serbian translation (sr_RS) by Borisa Djuraskovic (last updated November 28, 2013 - 0.3.3)
+* Serbian translation (sr_RS) by Borisa Djuraskovic (last updated April 10, 2014 - 2014.4.10)
 
 == Screenshots ==
 1. SO Responsive Content back end Visual Editor pre WP 3.9.

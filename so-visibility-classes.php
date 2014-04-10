@@ -3,7 +3,7 @@
  * Plugin URI: http://so-wp.com/?p=19
  * Description: With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
  * Author: Piet Bos
- * Version: 2014.1.20
+ * Version: 2014.4.10
  * Author URI: http://senlinonline.com
  * Text Domain: so-visibility-classes
  * Domain Path: /languages
@@ -135,7 +135,24 @@ function sovc_render_form() { ?>
 		<!-- Display Plugin Header and Description -->
 		<h2><?php _e( 'SO Responsive Content Instructions', 'so-visibility-classes' ); ?></h2>
 		
-		<p><?php _e( 'With the plugin activated you will see a new "Styles"-menu added to the Visual Editor.<br />The drop down contains 15 different options:', 'so-visibility-classes' ); ?></p>
+		<p>
+			<?php
+
+				global $wp_version;
+				$styles_version = '3.8.2';
+			
+				if ( version_compare( $wp_version, $styles_version, '>' ) ) {
+					
+					_e( 'With the plugin activated you will see a new "Formats"-menu added to the Visual Editor.<br />The drop down contains 15 different options:', 'so-visibility-classes' );
+					
+				} else {
+					
+					_e( 'With the plugin activated you will see a new "Styles"-menu added to the Visual Editor.<br />The drop down contains 15 different options:', 'so-visibility-classes' );
+					
+				}
+				
+			?>
+		</p>
 		<ul class="sovc-options-list">
 			<li class="list-item-title"><?php _e( 'For Paragraphs', 'so-visibility-classes' ); ?>
 				<ul>
@@ -165,11 +182,26 @@ function sovc_render_form() { ?>
 				</ul>
 			</li>
 		</ul>
+
 		<?php
-	$screenshot_menu_url = plugins_url( 'images/styles-dropdown-menu.png', __FILE__ );
-	$screenshot_editor_url = plugins_url( 'images/visual-editor.png', __FILE__ );
-		?>
+	
+			global $wp_version;
+			$styles_version = '3.8.2';
 		
+			if ( version_compare( $wp_version, $styles_version, '>' ) ) {
+				
+				$screenshot_menu_url = plugins_url( 'images/formats-dropdown-menu.png', __FILE__ );
+				
+			} else {
+				
+				$screenshot_menu_url = plugins_url( 'images/styles-dropdown-menu.png', __FILE__ );
+				
+			}
+			
+			$screenshot_editor_url = plugins_url( 'images/visual-editor.png', __FILE__ );
+			
+		?>
+
 		<img src="<?php echo $screenshot_menu_url; ?>" />
 		
 		<p><?php _e( 'Once you have selected a visibility class, the plugin shows that in 3 locations:', 'so-visibility-classes' ); ?></p>
@@ -237,8 +269,9 @@ function sovc_render_form() { ?>
 					</p>
 					
 					<ul>
-						<li><a href="http://senlinonline.com/" target="_blank" title="Senlin Online"><?php _e('Senlin Online', 'so-visibility-classes'); ?></a></li>
-						<li><a href="http://wpti.ps/" target="_blank" title="WP TIPS"><?php _e('WP Tips', 'so-visibility-classes'); ?></a></li>
+						<li><a href="https://senlinonline.com/plus/" target="_blank" title="SO PLUS"><?php _e( 'SO PLUS', 'so-visibility-classes' ); ?></a></li>
+						<li><a href="http://senlinonline.com/" target="_blank" title="Senlin Online"><?php _e( 'Senlin Online', 'so-visibility-classes' ); ?></a></li>
+						<li><a href="http://wpti.ps/" target="_blank" title="WP TIPS"><?php _e( 'WP Tips', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="https://plus.google.com/+PietBos" target="_blank" title="Piet on Google+"><?php _e( 'Google+', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="http://cn.linkedin.com/in/pietbos" target="_blank" title="LinkedIn profile"><?php _e( 'LinkedIn', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="http://twitter.com/piethfbos" target="_blank" title="Twitter"><?php _e( 'Twitter: @piethfbos', 'so-visibility-classes' ); ?></a></li>

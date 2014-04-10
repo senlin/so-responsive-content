@@ -8,10 +8,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2013-11-27 16:14+0100\n"
-"Last-Translator: Borisa Djuraskovic <borisad@webhostinghub.com>\n"
+"PO-Revision-Date: 2014-04-10 14:24+0800\n"
+"Last-Translator: Piet Bos <piet@senlinonline.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.4\n"
+"Language: sr_RS\n"
 
 #: so-visibility-classes.php:74
 msgid ""
@@ -29,6 +30,14 @@ msgid ""
 "Visual Editor.<br />The drop down contains 15 different options:"
 msgstr ""
 "Kad se plugin aktivira, videćete novi meni \"Styles\" u Vizuelnom uredniku. "
+"<br /> Padajući meni sadrži 15 različitih opcija:"
+
+#: so-visibility-classes.php
+msgid ""
+"With the plugin activated you will see a new \"Formats\"-menu added to the "
+"Visual Editor.<br />The drop down contains 15 different options:"
+msgstr ""
+"Kad se plugin aktivira, videćete novi meni \"Formats\" u Vizuelnom uredniku."
 "<br /> Padajući meni sadrži 15 različitih opcija:"
 
 #: so-visibility-classes.php:130

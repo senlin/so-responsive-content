@@ -24,6 +24,10 @@ msgstr ""
 msgid "With the plugin activated you will see a new \"Styles\"-menu added to the Visual Editor.<br />The drop down contains 15 different options:"
 msgstr ""
 
+#: so-visibility-classes.php
+msgid "With the plugin activated you will see a new \"Formats\"-menu added to the Visual Editor.<br />The drop down contains 15 different options:"
+msgstr ""
+
 #: so-visibility-classes.php:130
 msgid "For Paragraphs"
 msgstr ""

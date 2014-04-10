@@ -1,7 +1,7 @@
 SO Responsive Content
 =====================
 
-###### Last updated on 2014.1.20
+###### Last updated on 2014.4.10
 ###### requires at least WordPress 3.6
 ###### tested up to WordPress 3.9-alpha
 ###### Author: [Piet Bos](https://github.com/senlin)
@@ -28,7 +28,7 @@ Naturally the SO Responsive Content plugin has been fully internationalized. In 
 
 The plugin only contains 38 strings (of which many only 1 word); it would be a awesome if you can help me translate it into other languages!
 
-* Dutch translation (nl_NL) by [Piet Bos](https://github.com/senlin/) (last updated November 28, 2013 - 0.3.3)
+* Dutch translation (nl_NL) by [Piet Bos](https://github.com/senlin/) (last updated April 10, 2014 - 2014.04.10)
 * Serbian translation (sr_RS) by Borisa Djuraskovic (last updated November 28, 2013 - 0.3.3)
 
 ## License
@@ -50,11 +50,14 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 
 [Website](http://senlinonline.com)
 
-## TODO
-
-issue[#1](https://github.com/senlin/so-responsive-content/issues/1)
-
 ## Changelog
+
+### 2014.04.10
+
+* compatible with TinyMCE 4.x
+* added different instructions/images for WP pre/post 3.9
+* additional screenshot of Formats dropdown for WP post 3.9
+* updated language files
 
 ### 2014.1.20
 

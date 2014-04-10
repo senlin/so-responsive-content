@@ -3,8 +3,8 @@ Contributors: senlin
 Tags: responsive, content, visual editor, tinymce, text editor, content, classes, browser, tablet, phone, mobile, desktop, laptop, ipad, iphone, android
 Donate link: http://so-wp.com/donations
 Requires at least: 3.6
-Tested up to: 3.9-alpha
-Stable tag: 2014.1.20
+Tested up to: 3.9
+Stable tag: 2014.4.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ With the SO Responsive Content plugin you can easily adjust the length of your c
 
 For sites that have been built Responsive, this plugin will enable you to adjust your content too. On mobile devices like smart phones people are less likely to read very long pages of content and with the Responsive Content plugin you can easily adjust the text showing on these different devices.
 
-The SO Responsive Content plugin adds a Styles drop down menu to the first line of the TinyMCE Editor. Once you have selected a visibility class, the plugin shows that in 3 locations: 
+The SO Responsive Content plugin adds a Formats drop down menu (pre WP 3.9 the menu is called "Styles") to the first line of the TinyMCE Editor. Once you have selected a visibility class, the plugin shows that in 3 locations: 
 
 1. as selected in the drop down menu
 2. with a "button" in front of the selector (the only function of this "button" is to show you that the element behind it has one of the visibility classes)
@@ -72,21 +72,25 @@ Naturally the SO Responsive Content plugin has been fully internationalized. In 
 
 The plugin only contains 38 strings (of which many only 1 word); it would be a awesome if you can help me translate it into other languages!
 
-* Dutch translation (nl_NL) by [Piet Bos](http://profiles.wordpress.org/senlin/) (last updated November 28, 2013 - 0.3.3)
+* Dutch translation (nl_NL) by [Piet Bos](http://profiles.wordpress.org/senlin/) (last updated April 10, 2014 - 2014.4.10)
 * Serbian translation (sr_RS) by Borisa Djuraskovic (last updated November 28, 2013 - 0.3.3)
 
 == Screenshots ==
-1. SO Responsive Content back end Visual Editor.
-2. SO Responsive Content back end Text Editor.
-3. SO Responsive Content front end large (>1280px).
-4. SO Responsive Content front end medium (>768px <1280px).
-5. SO Responsive Content front end small (<768px).
+1. SO Responsive Content back end Visual Editor pre WP 3.9.
+2. SO Responsive Content back end Visual Editor post WP 3.9.
+3. SO Responsive Content back end Text Editor.
+4. SO Responsive Content front end large (>1280px).
+5. SO Responsive Content front end medium (>768px <1280px).
+6. SO Responsive Content front end small (<768px).
 
 == Changelog ==
 
-= 2014.1.20 =
+= 2014.04.10 =
 
-* run test for WP 3.9 release due to upgrade to TinyMCE 4.x
+* compatible with TinyMCE 4.x
+* added different instructions/images for WP pre/post 3.9
+* additional screenshot of Formats dropdown for WP post 3.9
+* updated language files
 
 = 2013.12.27 =
 

@@ -1,7 +1,7 @@
 SO Responsive Content
 =====================
 
-###### Last updated on 2014.4.10
+###### Last updated on 2014.04.10
 ###### requires at least WordPress 3.6
 ###### tested up to WordPress 3.9-RC1
 ###### Author: [Piet Bos](https://github.com/senlin)

@@ -18,6 +18,10 @@ More information about Background, Implementation and Usage available via the [W
 
 Please open an issue here on [Github](https://github.com/senlin/so-responsive-content/issues)
 
+## Known Issues
+
+As reported [here](https://github.com/senlin/so-responsive-content/issues/2) it is not possible to hide shortcodes with the plugin.
+
 ## Contributions
 
 This repo is open to _any_ kind of contributions.

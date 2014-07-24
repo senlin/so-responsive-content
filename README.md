@@ -14,14 +14,13 @@ More information about Background, Implementation and Usage available via the [W
 
 ## Frequently Asked Questions
 
-### Can this plugin hide shortcodes?
-
-Yes, it can, but you need to write your shortcodes a little bit different:
-Instead of writing `[shortcode do something]` you now need to write it `&#91;shortcode do something&#93;`
-
 ### I have an issue with this plugin, where can I get support?
 
 Please open an issue here on [Github](https://github.com/senlin/so-responsive-content/issues)
+
+## Known Issues
+
+As reported [here](https://github.com/senlin/so-responsive-content/issues/2) it is not possible to hide shortcodes with the plugin.
 
 ## Contributions
 

@@ -3,12 +3,12 @@
  * Plugin URI: http://so-wp.com/?p=19
  * Description: With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
  * Author: Piet Bos
- * Version: 2014.04.10
+ * Version: 2014.07.30
  * Author URI: http://senlinonline.com
  * Text Domain: so-visibility-classes
  * Domain Path: /languages
  *
- * Copywrite 2013 Piet Bos (piethfbos@gmail.com)
+ * Copywrite 2014 Piet Bos (piethfbos@gmail.com)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -35,7 +35,7 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 /**
- * Version check; any WP version under 3.6 is not supported (if only to "force" users to stay up to date)
+ * Version check; any WP version under '$require_wp' is not supported (if only to "force" users to stay up to date)
  * 
  * adapted from example by Thomas Scholz (@toscho) http://wordpress.stackexchange.com/a/95183/2015, Version: 2013.03.31, Licence: MIT (http://opensource.org/licenses/MIT)
  *
@@ -48,7 +48,7 @@ if ( ! empty ( $GLOBALS['pagenow'] ) && 'plugins.php' === $GLOBALS['pagenow'] )
 
 function sovc_min_wp_version() {
 	global $wp_version;
-	$require_wp = '3.6';
+	$require_wp = '3.8';
 	$update_url = get_admin_url( null, 'update-core.php' );
 
 	$errors = array();
@@ -139,7 +139,7 @@ function sovc_render_form() { ?>
 			<?php
 
 				global $wp_version;
-				$styles_version = '3.8.2';
+				$styles_version = '3.9.1';
 			
 				if ( version_compare( $wp_version, $styles_version, '>' ) ) {
 					
@@ -186,7 +186,7 @@ function sovc_render_form() { ?>
 		<?php
 	
 			global $wp_version;
-			$styles_version = '3.8.2';
+			$styles_version = '3.9.1';
 		
 			if ( version_compare( $wp_version, $styles_version, '>' ) ) {
 				

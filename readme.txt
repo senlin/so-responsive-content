@@ -2,9 +2,9 @@
 Contributors: senlin
 Tags: responsive, content, visual editor, tinymce, text editor, content, classes, browser, tablet, phone, mobile, desktop, laptop, ipad, iphone, android
 Donate link: http://so-wp.com/donations
-Requires at least: 3.6
-Tested up to: 3.9
-Stable tag: 2014.04.10
+Requires at least: 3.8
+Tested up to: 4.0-beta-2
+Stable tag: 2014.07.30
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,6 +52,10 @@ Now visit the Instructions page to see what you need to know to use this plugin.
 
 == Frequently Asked Questions ==
 
+= Is it possible to hide shortcodes with this plugin?
+
+As reported [here](https://github.com/senlin/so-responsive-content/issues/2) it is not possible to hide shortcodes in the WP Editor. A workaround can be to add the code to your template (sample in the ticket), but that largely depends on what you want to show/hide.
+
 = I have an issue with this plugin, where can I get support? =
 
 Please open an issue over at [Github](https://github.com/senlin/so-responsive-content/issues/new), as **I will not use the support forums** here on WordPress.org
@@ -84,6 +88,11 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 6. SO Responsive Content front end small (<768px).
 
 == Changelog ==
+
+= 2014.07.30 =
+
+* bump minimum required WP version up to 3.8
+* tested up to 4.0-beta-2
 
 = 2014.04.10 =
 

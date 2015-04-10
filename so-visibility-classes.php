@@ -3,12 +3,12 @@
  * Plugin URI: http://so-wp.com/?p=19
  * Description: With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
  * Author: Piet Bos
- * Version: 2014.07.30
+ * Version: 2015.04.09
  * Author URI: http://senlinonline.com
  * Text Domain: so-visibility-classes
  * Domain Path: /languages
  *
- * Copywrite 2014 Piet Bos (piethfbos@gmail.com)
+ * Copywrite 2014-2015 Piet Bos (piet@so-wp.com)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -48,7 +48,7 @@ if ( ! empty ( $GLOBALS['pagenow'] ) && 'plugins.php' === $GLOBALS['pagenow'] )
 
 function sovc_min_wp_version() {
 	global $wp_version;
-	$require_wp = '3.8';
+	$require_wp = '4.0';
 	$update_url = get_admin_url( null, 'update-core.php' );
 
 	$errors = array();
@@ -272,9 +272,7 @@ function sovc_render_form() { ?>
 						<li><a href="https://senlinonline.com/plus/" target="_blank" title="SO PLUS"><?php _e( 'SO PLUS', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="http://senlinonline.com/" target="_blank" title="Senlin Online"><?php _e( 'Senlin Online', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="http://wpti.ps/" target="_blank" title="WP TIPS"><?php _e( 'WP Tips', 'so-visibility-classes' ); ?></a></li>
-						<li><a href="https://plus.google.com/+PietBos" target="_blank" title="Piet on Google+"><?php _e( 'Google+', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="http://cn.linkedin.com/in/pietbos" target="_blank" title="LinkedIn profile"><?php _e( 'LinkedIn', 'so-visibility-classes' ); ?></a></li>
-						<li><a href="http://twitter.com/piethfbos" target="_blank" title="Twitter"><?php _e( 'Twitter: @piethfbos', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="http://github.com/senlin" title="on Github"><?php _e( 'Github', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="http://profiles.wordpress.org/senlin/" title="on WordPress.org"><?php _e( 'WordPress.org Profile', 'so-visibility-classes' ); ?></a></li>
 					</ul>

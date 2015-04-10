@@ -2,9 +2,9 @@
 Contributors: senlin
 Tags: responsive, content, visual editor, tinymce, text editor, content, classes, browser, tablet, phone, mobile, desktop, laptop, ipad, iphone, android
 Donate link: http://so-wp.com/donations
-Requires at least: 3.8
-Tested up to: 4.0-beta-2
-Stable tag: 2014.07.30
+Requires at least: 4.0
+Tested up to: 4.2
+Stable tag: 2015.04.09
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -88,6 +88,11 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 6. SO Responsive Content front end small (<768px).
 
 == Changelog ==
+
+= 2015.04.09 =
+
+* changed logos
+* new banner image for WP.org Repo by [Oliver Berghold](https://unsplash.com/oliverberghold)
 
 = 2014.07.30 =
 

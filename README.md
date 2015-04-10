@@ -1,9 +1,9 @@
 SO Responsive Content
 =====================
 
-###### Last updated on 2014.07.30
-###### requires at least WordPress 3.8
-###### tested up to WordPress 4.0-beta-2
+###### Last updated on 2015.04.09
+###### requires at least WordPress 4.0
+###### tested up to WordPress 4.2
 ###### Author: [Piet Bos](https://github.com/senlin)
 ###### [Stable Version](http://wordpress.org/plugins/so-visibility-classes) (via WordPress Plugins Repository)
 ###### [Plugin homepage](http://so-wp.com/?p=19)
@@ -48,13 +48,16 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 
 [Github](https://github.com/senlin) 
 
-[Google+](http://plus.google.com/+PietBos) 
-
 [WordPress](http://profiles.wordpress.org/senlin/) 
 
 [Website](http://senlinonline.com)
 
 ## Changelog
+
+### 2015.04.09
+
+* changed logos
+* new banner image for WP.org Repo by [Oliver Berghold](https://unsplash.com/oliverberghold)
 
 ### 2014.07.30
 

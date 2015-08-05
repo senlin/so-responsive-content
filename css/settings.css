@@ -3,7 +3,7 @@
  * 
  * @since 0.3.3
  */
-.sovc.wrap > h2 {
+.sovc.wrap > h1 {
 	background: url("../images/so-icon.png") no-repeat scroll 0 10px rgba(0, 0, 0, 0);
 	padding-left: 40px;
 }

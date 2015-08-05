@@ -3,7 +3,7 @@
  * Plugin URI: http://so-wp.com/?p=19
  * Description: With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
  * Author: Piet Bos
- * Version: 2015.04.09
+ * Version: 2015.08.05
  * Author URI: http://senlinonline.com
  * Text Domain: so-visibility-classes
  * Domain Path: /languages
@@ -133,7 +133,7 @@ function sovc_render_form() { ?>
 	<div class="sovc wrap">
 		
 		<!-- Display Plugin Header and Description -->
-		<h2><?php _e( 'SO Responsive Content Instructions', 'so-visibility-classes' ); ?></h2>
+		<h1><?php _e( 'SO Responsive Content Instructions', 'so-visibility-classes' ); ?></h1>
 		
 		<p>
 			<?php
@@ -269,12 +269,11 @@ function sovc_render_form() { ?>
 					</p>
 					
 					<ul>
-						<li><a href="https://senlinonline.com/plus/" target="_blank" title="SO PLUS"><?php _e( 'SO PLUS', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="http://senlinonline.com/" target="_blank" title="Senlin Online"><?php _e( 'Senlin Online', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="http://wpti.ps/" target="_blank" title="WP TIPS"><?php _e( 'WP Tips', 'so-visibility-classes' ); ?></a></li>
-						<li><a href="http://cn.linkedin.com/in/pietbos" target="_blank" title="LinkedIn profile"><?php _e( 'LinkedIn', 'so-visibility-classes' ); ?></a></li>
-						<li><a href="http://github.com/senlin" title="on Github"><?php _e( 'Github', 'so-visibility-classes' ); ?></a></li>
-						<li><a href="http://profiles.wordpress.org/senlin/" title="on WordPress.org"><?php _e( 'WordPress.org Profile', 'so-visibility-classes' ); ?></a></li>
+						<li><a href="https://www.linkedin.com/in/pietbos" target="_blank" title="LinkedIn profile"><?php _e( 'LinkedIn', 'so-visibility-classes' ); ?></a></li>
+						<li><a href="https://github.com/senlin" title="on Github"><?php _e( 'Github', 'so-visibility-classes' ); ?></a></li>
+						<li><a href="https://profiles.wordpress.org/senlin/" title="on WordPress.org"><?php _e( 'WordPress.org Profile', 'so-visibility-classes' ); ?></a></li>
 					</ul>
 				
 				</div> <!-- end .inside -->

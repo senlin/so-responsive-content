@@ -3,7 +3,7 @@ SO Responsive Content
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-visibility-classes.svg)](https://wordpress.org/plugins/so-visibility-classes)
 
-###### Last updated on 2015.08.05
+###### Last updated on 2015.08.12
 ###### requires at least WordPress 4.0
 ###### tested up to WordPress 4.3
 ###### Author: [Piet Bos](https://github.com/senlin)
@@ -56,40 +56,45 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 
 ## Changelog
 
-### 2015.08.05
+### 1.0.7 (2015.08.12)
+
+* TWEAK: header settings page; only showed half logo after 2015.08.05 update
+* revert Github version to [semantic versioning](http://semver.org)
+
+### 1.0.6 (015.08.05)
 
 * changed header settings page to h1 (https://make.wordpress.org/plugins/2015/08/03/4-3-change-to-plugin-dashboard-pages/)
 * show 4.3 compatibility
 
-### 2015.04.09
+### 1.0.5 (2015.04.09)
 
 * changed logos
 * new banner image for WP.org Repo by [Oliver Berghold](https://unsplash.com/oliverberghold)
 
-### 2014.07.30
+### 1.0.4 (2014.07.30)
 
 * bump minimum required WP version up to 3.8
 * tested up to 4.0-beta-2
 
-### 2014.04.10
+### 1.0.3 (2014.04.10)
 
 * compatible with TinyMCE 4.x
 * added different instructions/images for WP pre/post 3.9
 * additional screenshot of Formats dropdown for WP post 3.9
 * updated language files
 
-### 2014.1.20
+### 1.0.2 (2014.1.20)
 
 * run test for WP 3.9 release due to upgrade to TinyMCE 4.x
 
-### 2013.12.27
+### 1.0.1 (2013.12.27)
 
 * change px for em in frontend stylesheet (css/style.css) and make it more precise
 * change version number format
 * change links to reflect new [SO WP website](http://so-wp.com)
 * tested up to WP 3.9-alpha
 
-### 0.3.3
+### 1.0.0 (0.3.3)
 
 * add Serbian translation files (thank you Borisa Djuraskovic)
 * add settings stylesheet to replace inline styling settings page

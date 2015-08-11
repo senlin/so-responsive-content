@@ -4,7 +4,7 @@ Tags: responsive, content, visual editor, tinymce, text editor, content, classes
 Donate link: http://so-wp.com/donations
 Requires at least: 4.0
 Tested up to: 4.3
-Stable tag: 2015.08.05
+Stable tag: 2015.08.12
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -88,6 +88,10 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 6. SO Responsive Content front end small (<768px).
 
 == Changelog ==
+
+= 2015.08.12 =
+
+* TWEAK: header settings page; only showed half logo after 2015.08.05 update 
 
 = 2015.08.05 =
 

@@ -5,7 +5,7 @@ SO Responsive Content
 
 ###### Last updated on 2015.08.12
 ###### requires at least WordPress 4.0
-###### tested up to WordPress 4.3
+###### tested up to WordPress 4.4
 ###### Author: [Piet Bos](https://github.com/senlin)
 ###### [Stable Version](http://wordpress.org/plugins/so-visibility-classes) (via WordPress Plugins Repository)
 ###### [Plugin homepage](http://so-wp.com/?p=19)

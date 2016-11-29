@@ -1,14 +1,14 @@
 <?php
 /* Plugin Name: SO Responsive Content
- * Plugin URI: http://so-wp.com/?p=19
+ * Plugin URI: https://so-wp.com/?p=19
  * Description: With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
  * Author: SO WP
- * Version: 2015.08.12
- * Author URI: http://senlinonline.com
+ * Version: 2016.11.29
+ * Author URI: https://so-wp.com/plugins/
  * Text Domain: so-visibility-classes
  * Domain Path: /languages
  *
- * Copywrite 2014-2015 Piet Bos (piet@so-wp.com)
+ * Copywrite 2014-2016 Piet Bos (piet@so-wp.com)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -33,52 +33,6 @@
  * @since 0.1
  */
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
-
-/**
- * Version check; any WP version under '$require_wp' is not supported (if only to "force" users to stay up to date)
- * 
- * adapted from example by Thomas Scholz (@toscho) http://wordpress.stackexchange.com/a/95183/2015, Version: 2013.03.31, Licence: MIT (http://opensource.org/licenses/MIT)
- *
- * @since 0.1
- */
-
-//Only do this when on the Plugins page.
-if ( ! empty ( $GLOBALS['pagenow'] ) && 'plugins.php' === $GLOBALS['pagenow'] )
-	add_action( 'admin_notices', 'sovc_check_admin_notices', 0 );
-
-function sovc_min_wp_version() {
-	global $wp_version;
-	$require_wp = '4.0';
-	$update_url = get_admin_url( null, 'update-core.php' );
-
-	$errors = array();
-
-	if ( version_compare( $wp_version, $require_wp, '<' ) ) 
-
-		$errors[] = "You have WordPress version $wp_version installed, but <b>this plugin requires at least WordPress $require_wp</b>. Please <a href='$update_url'>update your WordPress version</a>.";
-
-	return $errors; 
-}
-
-function sovc_check_admin_notices()
-{
-	$errors = sovc_min_wp_version();
-
-	if ( empty ( $errors ) )
-		return;
-
-	// Suppress "Plugin activated" notice.
-	unset( $_GET['activate'] );
-
-	// this plugin's name
-	$name = get_file_data( __FILE__, array ( 'Plugin Name' ), 'plugin' );
-
-	printf( __( '<div class="error"><p>%1$s</p><p><i>%2$s</i> has been deactivated.</p></div>', 'so-visibility-classes' ),
-		join( '</p><p>', $errors ),
-		$name[0]
-	);
-	deactivate_plugins( plugin_basename( __FILE__ ) );
-}
 
 /**
  * Set-up Action and Filter Hooks
@@ -261,18 +215,19 @@ function sovc_render_form() { ?>
 				</h3>
 				
 				<div class="inside">
-					<img class="author-image" src="http://www.gravatar.com/avatar/<?php echo md5( 'info@senlinonline.com' ); ?>" />
+					<img class="author-image" src="https://www.gravatar.com/avatar/<?php echo md5( 'info@senlinonline.com' ); ?>" />
 					<p>
 						<?php printf( __( 'Hi, my name is Piet Bos, I hope you like this plugin! Please check out any of my other plugins on <a href="%s" title="SO WP Plugins">SO WP Plugins</a>. You can find out more information about me via the following links:', 'so-visibility-classes' ),
-						esc_url( 'http://so-wp.com/' )
+						esc_url( 'https://so-wp.com/plugins/' )
 						); ?>
 					</p>
 					
 					<ul>
-						<li><a href="http://senlinonline.com/" target="_blank" title="Senlin Online"><?php _e( 'Senlin Online', 'so-visibility-classes' ); ?></a></li>
-						<li><a href="http://wpti.ps/" target="_blank" title="WP TIPS"><?php _e( 'WP Tips', 'so-visibility-classes' ); ?></a></li>
+						<li><a href="https://bohanintl.com/" target="_blank" title="BHI Consulting"><?php _e( 'BHI Consulting', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="https://www.linkedin.com/in/pietbos" target="_blank" title="LinkedIn profile"><?php _e( 'LinkedIn', 'so-visibility-classes' ); ?></a></li>
+						<li><a href="https://so-wp.com/" target="_blank" title="SO WP"><?php _e( 'SO WP', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="https://github.com/senlin" title="on Github"><?php _e( 'Github', 'so-visibility-classes' ); ?></a></li>
+						<li><a href="https://wpti.ps/" target="_blank" title="WP TIPS"><?php _e( 'WP Tips', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="https://profiles.wordpress.org/senlin/" title="on WordPress.org"><?php _e( 'WordPress.org Profile', 'so-visibility-classes' ); ?></a></li>
 					</ul>
 				
@@ -396,7 +351,7 @@ function so_visibility_classes_mce_css( $mce_css ) {
 
 function so_visibility_classes_load_custom_admin_style() {
 	
-	wp_register_style( 'so_visibility_classes', plugin_dir_url( __FILE__ ) . 'css/settings.css', false, '2014.1.20' );
+	wp_register_style( 'so_visibility_classes', plugin_dir_url( __FILE__ ) . 'css/settings.css', false, NULL );
 	wp_enqueue_style( 'so_visibility_classes' );
 	
 }

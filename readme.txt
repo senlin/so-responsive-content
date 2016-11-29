@@ -1,10 +1,10 @@
 === SO Responsive Content ===
 Contributors: senlin
-Tags: responsive, content, visual editor, tinymce, text editor, content, classes, browser, tablet, phone, mobile, desktop, laptop, ipad, iphone, android
-Donate link: http://so-wp.com/donations
+Tags: responsive, content, classes, tablet, smartphone, phone, mobile, desktop, laptop, ipad, iphone, android
+Donate link: https://so-wp.com/plugins/donations
 Requires at least: 4.0
-Tested up to: 4.4
-Stable tag: 2015.08.12
+Tested up to: 4.7
+Stable tag: 2016.11.29
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,13 +30,11 @@ Since version 0.3 I have added 6 buttons to the Text Editor as well. For flexibi
 
 The plugin already comes with all the styles necessary to show the elements on or hide them from the front end, so all you need to do is save your Post, Page or other Post Type and visit your site from a few different devices (or resize your browser) to see your content change depending on the width of the browser!
 
-Under the [Other Notes](http://wordpress.org/plugins/so-visibility-classes/other_notes/)-tab I have added some information on Usage and Languages.
+Under the [Other Notes](https://wordpress.org/plugins/so-visibility-classes/other_notes/)-tab I have added some information on Usage and Languages.
 
 == Installation ==
 
-= Wordpress =
-
-Search for "SO Responsive Content" and install with the **Plugins > Add New** back-end page.
+Go to **Plugins > Add New** in your WordPress Dashboard, do a search for "SO Responsive Content" and install it.
 
  &hellip; OR &hellip;
 
@@ -76,7 +74,7 @@ Naturally the SO Responsive Content plugin has been fully internationalized. In 
 
 The plugin only contains 38 strings (of which many only 1 word); it would be a awesome if you can help me translate it into other languages!
 
-* Dutch translation (nl_NL) by [Piet Bos](http://profiles.wordpress.org/senlin/) (last updated April 10, 2014 - 2014.4.10)
+* Dutch translation (nl_NL) by [Piet Bos](https://profiles.wordpress.org/senlin/) (last updated April 10, 2014 - 2014.4.10)
 * Serbian translation (sr_RS) by Borisa Djuraskovic (last updated April 10, 2014 - 2014.4.10)
 
 == Screenshots ==
@@ -88,6 +86,15 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 6. SO Responsive Content front end small (<768px).
 
 == Changelog ==
+
+= 2016.11.29 =
+
+* tested up to WP 4.7
+* remove version check
+
+= 2016.08.13 =
+
+* tested up to WP 4.6
 
 = 2015.08.12 =
 

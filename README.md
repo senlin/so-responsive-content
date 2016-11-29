@@ -3,12 +3,12 @@ SO Responsive Content
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-visibility-classes.svg)](https://wordpress.org/plugins/so-visibility-classes)
 
-###### Last updated on 2015.08.12
+###### Last updated on 2016.08.13
 ###### requires at least WordPress 4.0
-###### tested up to WordPress 4.4
+###### tested up to WordPress 4.6
 ###### Author: [Piet Bos](https://github.com/senlin)
-###### [Stable Version](http://wordpress.org/plugins/so-visibility-classes) (via WordPress Plugins Repository)
-###### [Plugin homepage](http://so-wp.com/?p=19)
+###### [Stable Version](https://wordpress.org/plugins/so-visibility-classes) (via WordPress Plugins Repository)
+###### [Plugin homepage](https://so-wp.com/?p=19)
 
 With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
 
@@ -44,17 +44,30 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 
 ## Donations
 
-* Donate link: http://so-wp.com/donations
+* Donate link: https://so-wp.com/plugins/donations
 
 ## Connect with me through
 
+[Website](https://bohanintl.com)
+
+[Website](https://so-wp.com)
+
 [Github](https://github.com/senlin) 
 
-[WordPress](http://profiles.wordpress.org/senlin/) 
+[LinkedIn](https://www.linkedin.com/in/pietbos) 
 
-[Website](http://senlinonline.com)
+[WordPress](https://profiles.wordpress.org/senlin/) 
 
 ## Changelog
+
+### 1.0.9 (2016.11.29)
+
+* tested up to WP 4.7
+* remove version check
+
+### 1.0.8 (2016.08.13)
+
+* tested up to WP 4.6
 
 ### 1.0.7 (2015.08.12)
 

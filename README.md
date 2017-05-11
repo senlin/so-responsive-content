@@ -60,6 +60,11 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 
 ## Changelog
 
+### 1.1.0 (2017.5.11)
+
+* attempt to revert WP.org plugin to Semantic Versioning
+* WP.org version: 20171.1.0
+
 ### 1.0.10 (2017.5.11)
 
 * tested up to WP 4.8

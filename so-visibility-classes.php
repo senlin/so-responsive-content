@@ -3,7 +3,7 @@
  * Plugin URI: https://so-wp.com/?p=19
  * Description: With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
  * Author: SO WP
- * Version: 2017.5.11
+ * Version: 20171.1.0
  * Author URI: https://so-wp.com/plugins/
  * Text Domain: so-visibility-classes
  * Domain Path: /languages

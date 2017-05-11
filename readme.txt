@@ -4,7 +4,7 @@ Tags: responsive, content, classes, tablet, smartphone, phone, mobile, desktop, 
 Donate link: https://so-wp.com/plugins/donations
 Requires at least: 4.0
 Tested up to: 4.8
-Stable tag: 2017.5.11
+Stable tag: 20171.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -86,6 +86,10 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 6. SO Responsive Content front end small (<768px).
 
 == Changelog ==
+
+= 20171.1.0 =
+
+* attempt to revert to Semantic Versioning
 
 = 2017.5.11 =
 

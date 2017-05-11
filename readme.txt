@@ -3,8 +3,8 @@ Contributors: senlin
 Tags: responsive, content, classes, tablet, smartphone, phone, mobile, desktop, laptop, ipad, iphone, android
 Donate link: https://so-wp.com/plugins/donations
 Requires at least: 4.0
-Tested up to: 4.7
-Stable tag: 2016.11.29
+Tested up to: 4.8
+Stable tag: 2017.5.11
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -86,6 +86,11 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 6. SO Responsive Content front end small (<768px).
 
 == Changelog ==
+
+= 2017.5.11 =
+
+* tested up to WP 4.8
+* some CSS changes on Settings page
 
 = 2016.11.29 =
 

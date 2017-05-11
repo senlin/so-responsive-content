@@ -3,9 +3,9 @@ SO Responsive Content
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-visibility-classes.svg)](https://wordpress.org/plugins/so-visibility-classes)
 
-###### Last updated on 2016.08.13
+###### Last updated on 2017.5.11
 ###### requires at least WordPress 4.0
-###### tested up to WordPress 4.6
+###### tested up to WordPress 4.8
 ###### Author: [Piet Bos](https://github.com/senlin)
 ###### [Stable Version](https://wordpress.org/plugins/so-visibility-classes) (via WordPress Plugins Repository)
 ###### [Plugin homepage](https://so-wp.com/?p=19)
@@ -48,9 +48,9 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 
 ## Connect with me through
 
-[Website](https://bohanintl.com)
+[BHI Consulting for Websites](https://bohanintl.com)
 
-[Website](https://so-wp.com)
+[SO WP](https://so-wp.com)
 
 [Github](https://github.com/senlin) 
 
@@ -59,6 +59,11 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 [WordPress](https://profiles.wordpress.org/senlin/) 
 
 ## Changelog
+
+### 1.0.10 (2017.5.11)
+
+* tested up to WP 4.8
+* some CSS changes on Settings page
 
 ### 1.0.9 (2016.11.29)
 

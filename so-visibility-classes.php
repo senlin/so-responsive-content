@@ -3,12 +3,12 @@
  * Plugin URI: https://so-wp.com/?p=19
  * Description: With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
  * Author: SO WP
- * Version: 2016.11.29
+ * Version: 2017.5.11
  * Author URI: https://so-wp.com/plugins/
  * Text Domain: so-visibility-classes
  * Domain Path: /languages
  *
- * Copywrite 2014-2016 Piet Bos (piet@so-wp.com)
+ * Copywrite 2014-2017 Piet Bos (piet@so-wp.com)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -227,7 +227,7 @@ function sovc_render_form() { ?>
 						<li><a href="https://www.linkedin.com/in/pietbos" target="_blank" title="LinkedIn profile"><?php _e( 'LinkedIn', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="https://so-wp.com/" target="_blank" title="SO WP"><?php _e( 'SO WP', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="https://github.com/senlin" title="on Github"><?php _e( 'Github', 'so-visibility-classes' ); ?></a></li>
-						<li><a href="https://wpti.ps/" target="_blank" title="WP TIPS"><?php _e( 'WP Tips', 'so-visibility-classes' ); ?></a></li>
+						<li><a href="https://so-wp.com/website-care-plan/" target="_blank" title="WP TIPS"><?php _e( 'Website Care Plan', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="https://profiles.wordpress.org/senlin/" title="on WordPress.org"><?php _e( 'WordPress.org Profile', 'so-visibility-classes' ); ?></a></li>
 					</ul>
 				

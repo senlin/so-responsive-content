@@ -3,18 +3,23 @@ SO Responsive Content
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-visibility-classes.svg)](https://wordpress.org/plugins/so-visibility-classes)
 
-###### Last updated on 2017.5.11
+###### Last updated on October 29, 2018
 ###### requires at least WordPress 4.0
-###### tested up to WordPress 4.8
-###### Author: [Piet Bos](https://github.com/senlin)
+###### tested up to WordPress 5.0
+###### tested up to ClassicPress 1.0.0
+###### Author: [Pieter Bos](https://github.com/senlin)
 ###### [Stable Version](https://wordpress.org/plugins/so-visibility-classes) (via WordPress Plugins Repository)
-###### [Plugin homepage](https://so-wp.com/?p=19)
+###### [Plugin homepage]()
 
 With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
 
 More information about Background, Implementation and Usage available via the [Wiki](https://github.com/senlin/so-responsive-content/wiki/_pages)
 
 ## Frequently Asked Questions
+
+### Is this plugin compatible with Gutenberg?
+
+The plugin works on WP 5.0, but only by using the Classic Editor. The new WP Editor no longer uses TinyMCE and therefore this plugin does not function in the new (Gutenberg) editor.
 
 ### I have an issue with this plugin, where can I get support?
 

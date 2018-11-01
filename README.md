@@ -1,17 +1,17 @@
-SO Responsive Content
+Responsive Content
 =====================
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-visibility-classes.svg)](https://wordpress.org/plugins/so-visibility-classes)
 
-###### Last updated on October 29, 2018
+###### Last updated on November 1, 2018
 ###### requires at least WordPress 4.0
 ###### tested up to WordPress 5.0
 ###### tested up to ClassicPress 1.0.0
 ###### Author: [Pieter Bos](https://github.com/senlin)
 ###### [Stable Version](https://wordpress.org/plugins/so-visibility-classes) (via WordPress Plugins Repository)
-###### [Plugin homepage]()
+###### [Plugin homepage](https://so-wp.com/plugin/responsive-content)
 
-With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
+With the Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
 
 More information about Background, Implementation and Usage available via the [Wiki](https://github.com/senlin/so-responsive-content/wiki/_pages)
 
@@ -19,7 +19,7 @@ More information about Background, Implementation and Usage available via the [W
 
 ### Is this plugin compatible with Gutenberg?
 
-The plugin works on WP 5.0, but only by using the Classic Editor. The new WP Editor no longer uses TinyMCE and therefore this plugin does not function in the new (Gutenberg) editor.
+The plugin works on WP 5.0, but only by using the [Classic Editor](https://wordpress.org/plugins/classic-editor-addon/). The new WP Editor no longer uses TinyMCE and therefore this plugin does not function in the new (Gutenberg) editor.
 
 ### I have an issue with this plugin, where can I get support?
 
@@ -33,15 +33,6 @@ As reported [here](https://github.com/senlin/so-responsive-content/issues/2) it 
 
 This repo is open to _any_ kind of contributions.
 
-## Languages
-
-Naturally the SO Responsive Content plugin has been fully internationalized. In the languages directory you will find the .pot file and the .po file. I already have added the Dutch translation files.
-
-The plugin only contains 38 strings (of which many only 1 word); it would be a awesome if you can help me translate it into other languages!
-
-* Dutch translation (nl_NL) by [Piet Bos](https://github.com/senlin/) (last updated April 10, 2014 - 2014.04.10)
-* Serbian translation (sr_RS) by Borisa Djuraskovic (last updated November 28, 2013 - 0.3.3)
-
 ## License
 
 * License: GNU Version 2 or Any Later Version
@@ -49,7 +40,7 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 
 ## Donations
 
-* Donate link: https://so-wp.com/plugins/donations
+* Donate link: https://so-wp.com/donations
 
 ## Connect with me through
 
@@ -59,11 +50,18 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 
 [Github](https://github.com/senlin) 
 
-[LinkedIn](https://www.linkedin.com/in/pietbos) 
+[LinkedIn](https://www.linkedin.com/in/pieterbos83/) 
 
 [WordPress](https://profiles.wordpress.org/senlin/) 
 
 ## Changelog
+
+### 1.2.0 (2017.11.01)
+
+* add condition that checks for higher than WP 4.9.8 and then displays a warning notice that the Classic Editor plugin needs to be installed to continue using the Responsive Content plugin.
+* add a condition that checks whether ClassicPress has been installed and if it is a sentence is shown that the Responsive Content plugin also works on ClassicPress.
+
+* WP.org version: 20181.2.0
 
 ### 1.1.0 (2017.5.11)
 
@@ -146,7 +144,7 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 
 ### 0.2
 
-* name change to SO Responsive Content (from SO Visibility Classes)
+* name change to Responsive Content (from SO Visibility Classes)
 * update readme files with new name
 * update language files with new name
 * tested up to 3.7

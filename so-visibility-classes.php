@@ -1,14 +1,14 @@
 <?php
-/* Plugin Name: SO Responsive Content
- * Plugin URI: https://so-wp.com/?p=19
- * Description: With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
+/* Plugin Name: Responsive Content
+ * Plugin URI: https://so-wp.com/plugin/responsive-content
+ * Description: With the Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
  * Author: SO WP
- * Version: 20171.1.0
- * Author URI: https://so-wp.com/plugins/
+ * Version: 20181.2.0
+ * Author URI: https://so-wp.com
  * Text Domain: so-visibility-classes
  * Domain Path: /languages
  *
- * Copywrite 2014-2017 Piet Bos (piet@so-wp.com)
+ * Copywrite 2014-2018 Pieter Bos (pieter@so-wp.com)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -29,14 +29,14 @@
 
 /**
  * Prevent direct access to files
- * 
+ *
  * @since 0.1
  */
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 /**
  * Set-up Action and Filter Hooks
- * 
+ *
  * @since 0.1
  */
 add_action( 'admin_init', 'sovc_init' );
@@ -53,7 +53,7 @@ add_filter( 'mce_css', 'so_visibility_classes_mce_css' );
 
 /**
  * Load the textdomain
- * 
+ *
  * @since 0.1
  */
 add_action( 'plugins_loaded', 'sovc_init' );
@@ -64,14 +64,14 @@ function sovc_init() {
 
 /**
  * Add menu page
- * 
+ *
  * @since 0.1
  */
 function sovc_add_options_page() {
 
 	// Add the new admin menu and page and save the returned hook suffix
-	$hook = add_options_page( 'SO Responsive Content Instructions', 'SO Responsive Content', 'manage_options', __FILE__, 'sovc_render_form' );
-	
+	$hook = add_options_page( 'Responsive Content Instructions', 'Responsive Content', 'manage_options', __FILE__, 'sovc_render_form' );
+
 	// Use the hook suffix to compose the hook and register an action executed when plugin's options page is loaded
 	add_action( 'admin_print_styles-' . $hook , 'so_visibility_classes_load_custom_admin_style' );
 
@@ -79,34 +79,50 @@ function sovc_add_options_page() {
 
 /**
  * Render the Plugin options form
- * 
+ *
  * @since 0.1
  */
 function sovc_render_form() { ?>
 
 	<div class="sovc wrap">
-		
-		<!-- Display Plugin Header and Description -->
-		<h1><?php _e( 'SO Responsive Content Instructions', 'so-visibility-classes' ); ?></h1>
-		
-		<p>
-			<?php
 
-				global $wp_version;
-				$styles_version = '3.9.1';
-			
-				if ( version_compare( $wp_version, $styles_version, '>' ) ) {
-					
-					_e( 'With the plugin activated you will see a new "Formats"-menu added to the Visual Editor.<br />The drop down contains 15 different options:', 'so-visibility-classes' );
-					
-				} else {
-					
-					_e( 'With the plugin activated you will see a new "Styles"-menu added to the Visual Editor.<br />The drop down contains 15 different options:', 'so-visibility-classes' );
-					
-				}
-				
-			?>
-		</p>
+		<!-- Display Plugin Header and Description -->
+		<h1><?php _e( 'Responsive Content Instructions', 'so-visibility-classes' ); ?></h1>
+
+		<?php
+
+			global $wp_version;
+			$nongb_version = '4.9.8';
+			$styles_version = '3.9.1';
+
+			// conditional that checks we're higher than WP 4.9.8 and the Classic Editor plugin is not yet active
+			if ( version_compare( $wp_version, $nongb_version, '>' ) && ! function_exists( 'classic_editor_init_actions' ) ) {
+
+				echo '<div class="notice-warning notice responsive-content-notice">';
+				printf( '<p><strong>' . __( '[Attention]', 'so-visibility-classes' ) . ' </strong>' . __( 'If you wish to continue using the Responsive Content plugin, you will need to install <a href="%s">this plugin</a> to bring back the Classic Editor<br />The reason for this is that the new WP Editor no longer uses TinyMCE where this plugin basically is an extension on.', 'so-visibility-classes' ) . '</p>',
+					get_admin_url() . 'plugin-install.php?s=classic+editor+addon&tab=search&type=term'
+				);
+				echo '</div>';
+			}
+
+			if ( function_exists( 'classicpress_version' ) ) {
+
+				echo '<p>' . __( 'The Responsive Content plugin is perfectly suitable for use on ClassicPress!', 'so-visibility-classes' ) . '</p>';
+
+			}
+
+			if ( version_compare( $wp_version, $styles_version, '>' ) ) {
+
+				echo '<p>' . __( 'With the plugin activated you will see a new "Formats"-menu added to the Visual Editor.<br />The drop down contains 15 different options:', 'so-visibility-classes' ) . '</p>';
+
+			} else {
+
+				echo '<p>' . __( 'With the plugin activated you will see a new "Styles"-menu added to the Visual Editor.<br />The drop down contains 15 different options:', 'so-visibility-classes' ) . '</p>';
+
+			}
+
+		?>
+
 		<ul class="sovc-options-list">
 			<li class="list-item-title"><?php _e( 'For Paragraphs', 'so-visibility-classes' ); ?>
 				<ul>
@@ -138,40 +154,40 @@ function sovc_render_form() { ?>
 		</ul>
 
 		<?php
-	
+
 			global $wp_version;
 			$styles_version = '3.9.1';
-		
+
 			if ( version_compare( $wp_version, $styles_version, '>' ) ) {
-				
+
 				$screenshot_menu_url = plugins_url( 'images/formats-dropdown-menu.png', __FILE__ );
-				
+
 			} else {
-				
+
 				$screenshot_menu_url = plugins_url( 'images/styles-dropdown-menu.png', __FILE__ );
-				
+
 			}
-			
+
 			$screenshot_editor_url = plugins_url( 'images/visual-editor.png', __FILE__ );
-			
+
 		?>
 
 		<img src="<?php echo $screenshot_menu_url; ?>" />
-		
+
 		<p><?php _e( 'Once you have selected a visibility class, the plugin shows that in 3 locations:', 'so-visibility-classes' ); ?></p>
-		
+
 		<img src="<?php echo $screenshot_editor_url; ?>" />
-		
+
 		<ol>
 			<li><?php _e( 'as selected in the drop down menu', 'so-visibility-classes' ); ?></li>
 			<li><?php _e( 'with a “button” in front of the selector', 'so-visibility-classes' ); ?></li>
 			<li><?php _e( 'in the path', 'so-visibility-classes' ); ?></li>
 		</ol>
-		
+
 		<p><?php _e( 'It is good to know that the only function of this "button" is to show you that the element behind it has one of the visibility classes.<br /> For the rest it does not do anything to your content; you can therefore see it as a "helper".', 'so-visibility-classes' ); ?></p>
-		
+
 		<hr />
-		
+
 		<p><?php _e( 'Since version 0.3 of the plugin, you will also see 6 different buttons added to the Text Editor:', 'so-visibility-classes' ); ?></p>
 			<ul class="sovc-text-editor-options-list">
 				<li><?php _e( 'showSmall (this class is visible on a browser width of up to 768px)', 'so-visibility-classes' ); ?></li>
@@ -181,7 +197,7 @@ function sovc_render_form() { ?>
 				<li><?php _e( 'hideMedium (this class is hidden on a browser width between 768px and 1280px)', 'so-visibility-classes' ); ?></li>
 				<li><?php _e( 'hideLarge (this class is hidden on a browser width from 1280px up)', 'so-visibility-classes' ); ?></li>
 			</ul>
-		
+
 		<p><?php _e( 'These buttons work a little bit different than on the Visual Editor.', 'so-visibility-classes' ); ?><br />
 		<?php _e( 'They simply add a class, so you will have to write all elements yourself.', 'so-visibility-classes' ); ?></p>
 
@@ -190,49 +206,49 @@ function sovc_render_form() { ?>
 		?>
 
 		<img src="<?php echo $screenshot_text_editor; ?>" />
-		
+
 		<hr />
-		
+
 		<p><?php _e( 'You can use the visibility classes on virtually all elements: p, h1, h2, h3, h4, h5, h6, td, th, div, ul, ol, li, table and img.', 'so-visibility-classes' ); ?></p>
-		
-		<p><?php _e( 'Although possible, <strong>I strongly discourage</strong> using the classes with images. The reason is that the SO Responsive Content plugin only uses media queries with <code>display: block;</code>, <code>display: inline-block;</code> and <code>display: none;</code>. If you were to add a large image to only show on large screens, a medium image to show on tablets and a small image to show on smart phones, then the person visiting your site using a phone has to download all 3 images, which can have a major impact on the data plan of the visitor!', 'so-visibility-classes' ); ?></p>
+
+		<p><?php _e( 'Although possible, <strong>I strongly discourage</strong> using the classes with images. The reason is that the Responsive Content plugin only uses media queries with <code>display: block;</code>, <code>display: inline-block;</code> and <code>display: none;</code>. If you were to add a large image to only show on large screens, a medium image to show on tablets and a small image to show on smart phones, then the person visiting your site using a phone has to download all 3 images, which can have a major impact on the data plan of the visitor!', 'so-visibility-classes' ); ?></p>
 
 			<p class="rate-this-plugin">
-				
+
 				<?php
 				/* Translators: variable is link to WP Repo */
-				printf( __( 'If you have found this plugin at all useful, please give it a favourable rating in the <a href="%s" title="Rate this plugin!">WordPress Plugin Repository</a>.', 'so-visibility-classes' ), 
+				printf( __( 'If you have found this plugin at all useful, please give it a favourable rating in the <a href="%s" title="Rate this plugin!">WordPress Plugin Repository</a>.', 'so-visibility-classes' ),
 					esc_url( 'http://wordpress.org/plugins/so-visibility-classes/' )
 				);
 				?>
-				
+
 			</p>
-			
+
 			<div class="author postbox">
-				
+
 				<h3 class="hndle">
 					<span><?php _e( 'About the Author', 'so-visibility-classes' ); ?></span>
 				</h3>
-				
+
 				<div class="inside">
 					<img class="author-image" src="https://www.gravatar.com/avatar/<?php echo md5( 'info@senlinonline.com' ); ?>" />
 					<p>
-						<?php printf( __( 'Hi, my name is Piet Bos, I hope you like this plugin! Please check out any of my other plugins on <a href="%s" title="SO WP Plugins">SO WP Plugins</a>. You can find out more information about me via the following links:', 'so-visibility-classes' ),
+						<?php printf( __( 'Hi, my name is Pieter Bos, I hope you like this plugin! Please check out any of my other plugins on <a href="%s" title="SO WP Plugins">SO WP Plugins</a>. You can find out more information about me via the following links:', 'so-visibility-classes' ),
 						esc_url( 'https://so-wp.com/plugins/' )
 						); ?>
 					</p>
-					
+
 					<ul>
-						<li><a href="https://bohanintl.com/" target="_blank" title="BHI Consulting"><?php _e( 'BHI Consulting', 'so-visibility-classes' ); ?></a></li>
-						<li><a href="https://www.linkedin.com/in/pietbos" target="_blank" title="LinkedIn profile"><?php _e( 'LinkedIn', 'so-visibility-classes' ); ?></a></li>
-						<li><a href="https://so-wp.com/" target="_blank" title="SO WP"><?php _e( 'SO WP', 'so-visibility-classes' ); ?></a></li>
+						<li><a href="https://bohanintl.com" target="_blank" title="BHI Consulting"><?php _e( 'BHI Consulting', 'so-visibility-classes' ); ?></a></li>
+						<li><a href="https://www.linkedin.com/in/pieterbos83/" target="_blank" title="LinkedIn profile"><?php _e( 'LinkedIn', 'so-visibility-classes' ); ?></a></li>
+						<li><a href="https://so-wp.com" target="_blank" title="SO WP"><?php _e( 'SO WP Plugins', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="https://github.com/senlin" title="on Github"><?php _e( 'Github', 'so-visibility-classes' ); ?></a></li>
-						<li><a href="https://so-wp.com/website-care-plan/" target="_blank" title="WP TIPS"><?php _e( 'Website Care Plan', 'so-visibility-classes' ); ?></a></li>
+						<li><a href="https://bohanintl.com/services/website-care-plan" target="_blank" title="WP TIPS"><?php _e( 'Website Care Plan', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="https://profiles.wordpress.org/senlin/" title="on WordPress.org"><?php _e( 'WordPress.org Profile', 'so-visibility-classes' ); ?></a></li>
 					</ul>
-				
+
 				</div> <!-- end .inside -->
-			
+
 			</div> <!-- end .postbox -->
 
 	</div> <!-- end .wrap -->
@@ -241,7 +257,7 @@ function sovc_render_form() { ?>
 
 /**
  * Display a Settings link on the main Plugins page
- * 
+ *
  * @since 0.1
  */
 function sovc_plugin_action_links( $links, $file ) {
@@ -258,11 +274,11 @@ function sovc_plugin_action_links( $links, $file ) {
 /**
  * Instead of using Shortcodes it is much easier to add the options directly to the Styles menu of the TinyMCE
  * via tip Jan Fabry: http://justintadlock.com/archives/2011/05/02/dealing-with-shortcode-madness#comment-335205
- * 
+ *
  * adding the number 2-4 in the filter, like mce_buttons_2, mce_buttons_3 or mce_buttons_4 will place the Styles Dropdown on that particular line
  *
  * other useful article http://alisothegeek.com/2011/05/tinymce-styles-dropdown-wordpress-visual-editor/
- * 
+ *
  * @since 0.1
  */
 add_filter( 'mce_buttons', 'so_visibility_classes_mce' );
@@ -275,7 +291,7 @@ function so_visibility_classes_mce( $buttons ) {
 add_filter( 'tiny_mce_before_init', 'so_visibility_classes_mce_before_init' );
 
 function so_visibility_classes_mce_before_init( $settings ) {
-	
+
     $style_formats = array(
         array( 'title' => __( 'showSmall', 'so-visibility-classes' ), 'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', 'classes' => 'so-show-small' ),
         array( 'title' => __( 'showMedium', 'so-visibility-classes' ), 'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', 'classes' => 'so-show-medium' ),
@@ -321,15 +337,15 @@ function sovc_add_quicktags() {
 
 /**
  * Add stylesheet for frontend
- * 
+ *
  * @since 0.1
  */
 //add_action( 'wp_enqueue_scripts', 'so_visibility_classes_load_css' );
 
 function so_visibility_classes_load_css() {
-	
+
 	wp_enqueue_style( 'so_visibility_classes', plugins_url( 'css/style.css', __FILE__ ) );
-	
+
 }
 
 /**
@@ -350,9 +366,9 @@ function so_visibility_classes_mce_css( $mce_css ) {
 }
 
 function so_visibility_classes_load_custom_admin_style() {
-	
+
 	wp_register_style( 'so_visibility_classes', plugin_dir_url( __FILE__ ) . 'css/settings.css', false, NULL );
 	wp_enqueue_style( 'so_visibility_classes' );
-	
+
 }
 /** The End **/

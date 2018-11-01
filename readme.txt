@@ -1,20 +1,20 @@
-=== SO Responsive Content ===
+=== Responsive Content ===
 Contributors: senlin
 Tags: responsive, content, classes, tablet, smartphone, phone, mobile, desktop, laptop, ipad, iphone, android
-Donate link: https://so-wp.com/plugins/donations
+Donate link: https://so-wp.com/donations
 Requires at least: 4.0
 Tested up to: 5.0
-Stable tag: 20171.1.0
+Stable tag: 20181.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-With the SO Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
+With the Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
 
 == Description ==
 
 For sites that have been built Responsive, this plugin will enable you to adjust your content too. On mobile devices like smart phones people are less likely to read very long pages of content and with the Responsive Content plugin you can easily adjust the text showing on these different devices.
 
-The SO Responsive Content plugin adds a Formats drop down menu (pre WP 3.9 the menu is called "Styles") to the first line of the TinyMCE Editor. Once you have selected a visibility class, the plugin shows that in 3 locations:
+The Responsive Content plugin adds a Formats drop down menu (pre WP 3.9 the menu is called "Styles") to the first line of the TinyMCE Editor. Once you have selected a visibility class, the plugin shows that in 3 locations:
 
 1. as selected in the drop down menu
 2. with a "button" in front of the selector (the only function of this "button" is to show you that the element behind it has one of the visibility classes)
@@ -34,7 +34,7 @@ Under the [Other Notes](https://wordpress.org/plugins/so-visibility-classes/othe
 
 == Installation ==
 
-Go to **Plugins > Add New** in your WordPress Dashboard, do a search for "SO Responsive Content" and install it.
+Go to **Plugins > Add New** in your WordPress Dashboard, do a search for "Responsive Content" and install it.
 
  &hellip; OR &hellip;
 
@@ -52,7 +52,7 @@ Now visit the Instructions page to see what you need to know to use this plugin.
 
 = Is this plugin compatible with Gutenberg? =
 
-The plugin works on WP 5.0, but only by using the Classic Editor. The new WP Editor no longer uses TinyMCE and therefore this plugin does not function in the new (Gutenberg) editor.
+The plugin works on WP 5.0, but only by using the [Classic Editor](https://wordpress.org/plugins/classic-editor-addon/). The new WP Editor no longer uses TinyMCE and therefore this plugin does not function in the new (Gutenberg) editor.
 
 = Is it possible to hide shortcodes with this plugin?
 
@@ -66,30 +66,25 @@ Please open an issue over at [Github](https://github.com/senlin/so-responsive-co
 
 = Usage =
 
-You can use the SO Responsive Content plugin basically for any Post Type.
+You can use the Responsive Content plugin basically for any Post Type.
 
-Although possible, **I strongly discourage** using the classes with images. The reason is that the SO Responsive Content plugin only uses media queries with `display: block;`, `display: inline-block;` and `display: none;`. If you were to add a large image to only show on large screens, a medium image to show on tablets and a small image to show on smart phones, then the person visiting your site using a phone has to download all 3 images, which can have a major impact on the data plan of the visitor!
-
-To conditionally show images it is much, much better to implement the [MobileDetect script](http://mobiledetect.net) on your site.
-
-= Languages =
-
-Naturally the SO Responsive Content plugin has been fully internationalized. In the languages directory you will find the .pot file and the .po file. I already have added the Dutch translation files.
-
-The plugin only contains 38 strings (of which many only 1 word); it would be a awesome if you can help me translate it into other languages!
-
-* Dutch translation (nl_NL) by [Piet Bos](https://profiles.wordpress.org/senlin/) (last updated April 10, 2014 - 2014.4.10)
-* Serbian translation (sr_RS) by Borisa Djuraskovic (last updated April 10, 2014 - 2014.4.10)
+Although possible, **I strongly discourage** using the classes with images. The reason is that the Responsive Content plugin only uses media queries with `display: block;`, `display: inline-block;` and `display: none;`. If you were to add a large image to only show on large screens, a medium image to show on tablets and a small image to show on smart phones, then the person visiting your site using a phone has to download all 3 images, which can have a major impact on the data plan of the visitor!
 
 == Screenshots ==
-1. SO Responsive Content back end Visual Editor pre WP 3.9.
-2. SO Responsive Content back end Visual Editor post WP 3.9.
-3. SO Responsive Content back end Text Editor.
-4. SO Responsive Content front end large (>1280px).
-5. SO Responsive Content front end medium (>768px <1280px).
-6. SO Responsive Content front end small (<768px).
+1. Responsive Content back end Visual Editor pre WP 3.9.
+2. Responsive Content back end Visual Editor post WP 3.9.
+3. Responsive Content back end Text Editor.
+4. Responsive Content front end large (>1280px).
+5. Responsive Content front end medium (>768px <1280px).
+6. Responsive Content front end small (<768px).
 
 == Changelog ==
+
+= 20181.2.0 =
+
+* add condition that checks for higher than WP 4.9.8 and then displays a warning notice that the Classic Editor plugin needs to be installed to continue using the Responsive Content plugin.
+* add a condition that checks whether ClassicPress has been installed and if it is a sentence is shown that the Responsive Content plugin also works on ClassicPress.
+* removed SO icon on Settings page
 
 = 20171.1.0 =
 
@@ -163,7 +158,7 @@ The plugin only contains 38 strings (of which many only 1 word); it would be a a
 * 6 additional styles for the text editor
 
 = 0.2 =
-* name change to SO Responsive Content (from SO Visibility Classes)
+* name change to Responsive Content (from SO Visibility Classes)
 * update readme files with new name
 * update language files with new name
 * tested up to 3.7

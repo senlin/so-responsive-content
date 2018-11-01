@@ -1,8 +1,8 @@
-# Copyright (C) 2013 SO Responsive Content
-# This file is distributed under the same license as the SO Responsive Content package.
+# Copyright (C) 2013 Responsive Content
+# This file is distributed under the same license as the Responsive Content package.
 msgid ""
 msgstr ""
-"Project-Id-Version: SO Responsive Content 0.3\n"
+"Project-Id-Version: Responsive Content 0.3\n"
 "Report-Msgid-Bugs-To: https://github.com/so-wp/so-visibility-classes/issues\n"
 "POT-Creation-Date: 2013-11-02 22:18:53+00:00\n"
 "MIME-Version: 1.0\n"
@@ -21,8 +21,8 @@ msgid ""
 msgstr "<div class=\"error\"><p>%1$s</p><p><i>%2$s</i>deaktiviran je</p></div>"
 
 #: so-visibility-classes.php:126
-msgid "SO Responsive Content Instructions"
-msgstr "SO Responsive Content Instructions"
+msgid "Responsive Content Instructions"
+msgstr "Responsive Content Instructions"
 
 #: so-visibility-classes.php:128
 msgid ""
@@ -207,7 +207,7 @@ msgstr ""
 #: so-visibility-classes.php:202
 msgid ""
 "Although possible, <strong>I strongly discourage</strong> using the classes "
-"with images. The reason is that the SO Responsive Content plugin only uses "
+"with images. The reason is that the Responsive Content plugin only uses "
 "media queries with <code>display: block;</code> and <code>display: none;</"
 "code>. If you were to add a large image to only show on large screens, a "
 "medium image to show on tablets and a small image to show on smart phones, "
@@ -215,7 +215,7 @@ msgid ""
 "images, which can have a major impact on the data plan of the visitor!"
 msgstr ""
 "Iako je moguće ja<strong> izbegavam upotrebu</strong>  klasa sa slikama. "
-"Razlog za to je što plugin SO Responsive Content koristi samo pretrage "
+"Razlog za to je što plugin Responsive Content koristi samo pretrage "
 "medija sa opcijama <code> display: block;</code>  and <code>display: none.</"
 "code> Ako dodajete veliku sliku koja će se prikazivati samo na velikim "
 "ekranima, sliku srednje veličine koja će se prikazivati na tabletima i malu "
@@ -340,8 +340,8 @@ msgid "inline-hideLarge"
 msgstr "redni-sakrijVelike"
 
 #. Plugin Name of the plugin/theme
-msgid "SO Responsive Content"
-msgstr "SO Responsive Content"
+msgid "Responsive Content"
+msgstr "Responsive Content"
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/so-wp/so-visibility-classes"
@@ -349,10 +349,10 @@ msgstr "https://github.com/so-wp/so-visibility-classes"
 
 #. Description of the plugin/theme
 msgid ""
-"With the SO Responsive Content plugin you can easily adjust the length of "
+"With the Responsive Content plugin you can easily adjust the length of "
 "your content for different devices by making use of visibility classes."
 msgstr ""
-"Uz plugin SO Responsive Content lako možete podesiti dužinu svog sadržaja za "
+"Uz plugin Responsive Content lako možete podesiti dužinu svog sadržaja za "
 "različite uređaje tako što ćete upotrebiti klase vidljivosti. "
 
 #. Author of the plugin/theme

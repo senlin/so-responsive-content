@@ -60,7 +60,7 @@ This repo is open to _any_ kind of contributions.
 
 * add condition that checks for higher than WP 4.9.8 and then displays a warning notice that the Classic Editor plugin needs to be installed to continue using the Responsive Content plugin.
 * add a condition that checks whether ClassicPress has been installed and if it is a sentence is shown that the Responsive Content plugin also works on ClassicPress.
-
+* removed SO icon on Settings page
 * WP.org version: 20181.2.0
 
 ### 1.1.0 (2017.5.11)

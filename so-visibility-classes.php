@@ -1,9 +1,9 @@
 <?php
 /* Plugin Name: Responsive Content
  * Plugin URI: https://so-wp.com/plugin/responsive-content
- * Description: With the Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
+ * Description: This plugin enables you to show/hide content depending on the device the visitor is browsing from.
  * Author: SO WP
- * Version: 20181.2.0
+ * Version: 20181.2.1
  * Author URI: https://so-wp.com
  * Text Domain: so-visibility-classes
  * Domain Path: /languages
@@ -51,6 +51,58 @@ add_action( 'wp_enqueue_scripts', 'so_visibility_classes_load_css' );
 
 add_filter( 'mce_css', 'so_visibility_classes_mce_css' );
 
+global $wp_version;
+$nongb_version = '4.9.8';
+
+// conditional that checks we're higher than WP 4.9.8 and the Classic Editor plugin is not active
+if ( version_compare( $wp_version, $nongb_version, '>' ) && ! function_exists( 'classic_editor_init_actions' ) ) {
+	add_action( 'admin_notices', 'sovc_admin_notice__warning' );
+}
+
+if ( function_exists( 'classicpress_version' ) ) {
+
+	add_action( 'admin_notices', 'sovc_admin_notice__info' );
+
+}
+
+
+function sovc_admin_notice__warning() {
+
+	$screen = get_current_screen();
+	if ( $screen->base === 'settings_page_so-responsive-content/so-visibility-classes' ) {
+
+		echo '<div class="notice sovc-notice notice-warning is-dismissible">';
+		printf(
+			'<p><strong>' .
+			__( '[Attention]', 'so-visibility-classes' ) .
+			' </strong>' .
+			__( 'On WP 5.0 the Responsive Content plugin can be used in either one of two ways:', 'so-visibility-classes' ) .
+			'</p><ul><li>' .
+			__( 'by using the Classic Block of the new editor', 'so-visibility-classes' ) .
+			'</li><li>' .
+			__( 'by installing <a href="%s">this plugin</a> to bring back the Classic Editor.', 'so-visibility-classes' ) .
+			'</li></ul>',
+				get_admin_url() . 'plugin-install.php?s=classic+editor+addon&tab=search&type=term'
+		);
+		echo '</div>';
+
+	}
+}
+
+function sovc_admin_notice__info() {
+
+	$screen = get_current_screen();
+	if ( $screen->base === 'settings_page_so-responsive-content/so-visibility-classes' ) {
+
+		echo '<div class="notice notice-info is-dismissible">';
+		echo '<p><strong>' . __( '[FYI]', 'so-visibility-classes' ) . ' </strong>' . __( 'The Responsive Content plugin is perfectly suitable for use on ClassicPress!', 'so-visibility-classes' ) . '</p>';
+		echo '</div>';
+
+	}
+
+}
+
+
 /**
  * Load the textdomain
  *
@@ -70,12 +122,13 @@ function sovc_init() {
 function sovc_add_options_page() {
 
 	// Add the new admin menu and page and save the returned hook suffix
-	$hook = add_options_page( 'Responsive Content Instructions', 'Responsive Content', 'manage_options', __FILE__, 'sovc_render_form' );
+	$hook = add_options_page( __( 'Responsive Content Instructions', 'so-visibility-classes' ), __( 'Responsive Content', 'so-visibility-classes' ), 'manage_options', __FILE__, 'sovc_render_form' );
 
 	// Use the hook suffix to compose the hook and register an action executed when plugin's options page is loaded
 	add_action( 'admin_print_styles-' . $hook , 'so_visibility_classes_load_custom_admin_style' );
 
 }
+
 
 /**
  * Render the Plugin options form
@@ -92,24 +145,7 @@ function sovc_render_form() { ?>
 		<?php
 
 			global $wp_version;
-			$nongb_version = '4.9.8';
 			$styles_version = '3.9.1';
-
-			// conditional that checks we're higher than WP 4.9.8 and the Classic Editor plugin is not yet active
-			if ( version_compare( $wp_version, $nongb_version, '>' ) && ! function_exists( 'classic_editor_init_actions' ) ) {
-
-				echo '<div class="notice-warning notice responsive-content-notice">';
-				printf( '<p><strong>' . __( '[Attention]', 'so-visibility-classes' ) . ' </strong>' . __( 'If you wish to continue using the Responsive Content plugin, you will need to install <a href="%s">this plugin</a> to bring back the Classic Editor<br />The reason for this is that the new WP Editor no longer uses TinyMCE where this plugin basically is an extension on.', 'so-visibility-classes' ) . '</p>',
-					get_admin_url() . 'plugin-install.php?s=classic+editor+addon&tab=search&type=term'
-				);
-				echo '</div>';
-			}
-
-			if ( function_exists( 'classicpress_version' ) ) {
-
-				echo '<p>' . __( 'The Responsive Content plugin is perfectly suitable for use on ClassicPress!', 'so-visibility-classes' ) . '</p>';
-
-			}
 
 			if ( version_compare( $wp_version, $styles_version, '>' ) ) {
 
@@ -218,7 +254,7 @@ function sovc_render_form() { ?>
 				<?php
 				/* Translators: variable is link to WP Repo */
 				printf( __( 'If you have found this plugin at all useful, please give it a favourable rating in the <a href="%s" title="Rate this plugin!">WordPress Plugin Repository</a>.', 'so-visibility-classes' ),
-					esc_url( 'http://wordpress.org/plugins/so-visibility-classes/' )
+					esc_url( 'https://wordpress.org/support/plugin/so-visibility-classes/reviews/?rate=5#new-post' )
 				);
 				?>
 
@@ -234,7 +270,7 @@ function sovc_render_form() { ?>
 					<img class="author-image" src="https://www.gravatar.com/avatar/<?php echo md5( 'info@senlinonline.com' ); ?>" />
 					<p>
 						<?php printf( __( 'Hi, my name is Pieter Bos, I hope you like this plugin! Please check out any of my other plugins on <a href="%s" title="SO WP Plugins">SO WP Plugins</a>. You can find out more information about me via the following links:', 'so-visibility-classes' ),
-						esc_url( 'https://so-wp.com/plugins/' )
+						esc_url( 'https://so-wp.com' )
 						); ?>
 					</p>
 
@@ -243,7 +279,7 @@ function sovc_render_form() { ?>
 						<li><a href="https://www.linkedin.com/in/pieterbos83/" target="_blank" title="LinkedIn profile"><?php _e( 'LinkedIn', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="https://so-wp.com" target="_blank" title="SO WP"><?php _e( 'SO WP Plugins', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="https://github.com/senlin" title="on Github"><?php _e( 'Github', 'so-visibility-classes' ); ?></a></li>
-						<li><a href="https://bohanintl.com/services/website-care-plan" target="_blank" title="WP TIPS"><?php _e( 'Website Care Plan', 'so-visibility-classes' ); ?></a></li>
+						<li><a href="https://bohanintl.com/services/website-care-plan" target="_blank" title="Website Care Plan"><?php _e( 'Website Care Plan', 'so-visibility-classes' ); ?></a></li>
 						<li><a href="https://profiles.wordpress.org/senlin/" title="on WordPress.org"><?php _e( 'WordPress.org Profile', 'so-visibility-classes' ); ?></a></li>
 					</ul>
 
@@ -263,7 +299,7 @@ function sovc_render_form() { ?>
 function sovc_plugin_action_links( $links, $file ) {
 
 	if ( $file == plugin_basename( __FILE__ ) ) {
-		$sovc_links = '<a href="' . get_admin_url() . 'options-general.php?page=so-visibility-classes/so-visibility-classes.php">' . __( 'Read before using', 'so-visibility-classes' ) . '</a>';
+		$sovc_links = '<a href="' . get_admin_url() . 'options-general.php?page=so-responsive-content/so-visibility-classes.php">' . __( 'Read before using', 'so-visibility-classes' ) . '</a>';
 		// make the 'Settings' link appear first
 		array_unshift( $links, $sovc_links );
 	}
@@ -371,4 +407,5 @@ function so_visibility_classes_load_custom_admin_style() {
 	wp_enqueue_style( 'so_visibility_classes' );
 
 }
+
 /** The End **/

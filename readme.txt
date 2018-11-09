@@ -4,15 +4,19 @@ Tags: responsive, content, classes, tablet, smartphone, phone, mobile, desktop, 
 Donate link: https://so-wp.com/donations
 Requires at least: 4.0
 Tested up to: 5.0
-Stable tag: 20181.2.0
+Stable tag: 20181.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-With the Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
+This plugin enables you to show/hide content depending on the device the visitor is browsing from.
 
 == Description ==
 
-For sites that have been built Responsive, this plugin will enable you to adjust your content too. On mobile devices like smart phones people are less likely to read very long pages of content and with the Responsive Content plugin you can easily adjust the text showing on these different devices.
+The Responsive Content plugin enables you to adjust the content depending on the device/viewport.
+
+An example where this can be very handy for is <strong>telephone numbers</strong>. On a mobile device, a telephone number can be a link from which it can be dialed immediately, whereas from a lap/desktop the number does not have to be a link.
+
+With the Responsive Content plugin it is as simple as adding a class to the content to show/hide it for different devices.
 
 The Responsive Content plugin adds a Formats drop down menu (pre WP 3.9 the menu is called "Styles") to the first line of the TinyMCE Editor. Once you have selected a visibility class, the plugin shows that in 3 locations:
 
@@ -50,9 +54,9 @@ Now visit the Instructions page to see what you need to know to use this plugin.
 
 == Frequently Asked Questions ==
 
-= Is this plugin compatible with Gutenberg? =
+= Is this plugin compatible with the new editor of WP 5.0 (codenamed Gutenberg)? =
 
-The plugin works on WP 5.0, but only by using the [Classic Editor](https://wordpress.org/plugins/classic-editor-addon/). The new WP Editor no longer uses TinyMCE and therefore this plugin does not function in the new (Gutenberg) editor.
+The plugin works on WP 5.0, but only on a Classic Block. Alternatively we would like to suggest to either using the [Classic Editor](https://wordpress.org/plugins/classic-editor-addon/) or to install [ClassicPress](https://www.classicpress.net) once it is released.
 
 = Is it possible to hide shortcodes with this plugin?
 
@@ -80,8 +84,16 @@ Although possible, **I strongly discourage** using the classes with images. The 
 
 == Changelog ==
 
+= 20181.2.1 =
+
+* November 9, 2018
+* plugin actually works with WP 5.0, but only with Classic Block, change readme to reflect that
+* re-code admin notices and make them dismissible
+* rewrite/cleaning up/updates here and there
+
 = 20181.2.0 =
 
+* November 1, 2018
 * add condition that checks for higher than WP 4.9.8 and then displays a warning notice that the Classic Editor plugin needs to be installed to continue using the Responsive Content plugin.
 * add a condition that checks whether ClassicPress has been installed and if it is a sentence is shown that the Responsive Content plugin also works on ClassicPress.
 * removed SO icon on Settings page

@@ -3,7 +3,7 @@ Responsive Content
 
 [![plugin version](https://img.shields.io/wordpress/plugin/v/so-visibility-classes.svg)](https://wordpress.org/plugins/so-visibility-classes)
 
-###### Last updated on November 1, 2018
+###### Last updated on November 9, 2018
 ###### requires at least WordPress 4.0
 ###### tested up to WordPress 5.0
 ###### tested up to ClassicPress 1.0.0
@@ -11,15 +11,15 @@ Responsive Content
 ###### [Stable Version](https://wordpress.org/plugins/so-visibility-classes) (via WordPress Plugins Repository)
 ###### [Plugin homepage](https://so-wp.com/plugin/responsive-content)
 
-With the Responsive Content plugin you can easily adjust the length of your content for different devices by making use of visibility classes.
+This plugin enables you to show/hide content depending on the device the visitor is browsing from.
 
 More information about Background, Implementation and Usage available via the [Wiki](https://github.com/senlin/so-responsive-content/wiki/_pages)
 
 ## Frequently Asked Questions
 
-### Is this plugin compatible with Gutenberg?
+### Is this plugin compatible with the new editor of WP 5.0 (codenamed Gutenberg)?
 
-The plugin works on WP 5.0, but only by using the [Classic Editor](https://wordpress.org/plugins/classic-editor-addon/). The new WP Editor no longer uses TinyMCE and therefore this plugin does not function in the new (Gutenberg) editor.
+The plugin works on WP 5.0, but only on a Classic Block. Alternatively we would like to suggest to either using the [Classic Editor](https://wordpress.org/plugins/classic-editor-addon/) or to install [ClassicPress](https://www.classicpress.net) once it is released.
 
 ### I have an issue with this plugin, where can I get support?
 
@@ -56,8 +56,17 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
-### 1.2.0 (2017.11.01)
+### 1.2.1
 
+* November 9, 2018
+* plugin actually works with WP 5.0, but only with Classic Block, change readme to reflect that
+* re-code admin notices and make them dismissible
+* rewrite/cleaning up/updates here and there
+* WP.org version: 20181.2.1
+
+### 1.2.0
+
+* November 1, 2018
 * add condition that checks for higher than WP 4.9.8 and then displays a warning notice that the Classic Editor plugin needs to be installed to continue using the Responsive Content plugin.
 * add a condition that checks whether ClassicPress has been installed and if it is a sentence is shown that the Responsive Content plugin also works on ClassicPress.
 * removed SO icon on Settings page

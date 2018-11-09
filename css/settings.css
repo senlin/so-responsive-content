@@ -3,6 +3,9 @@
  *
  * @since 0.3.3
  */
+.sovc-notice > ul {
+	list-style: disc inside;
+}
 .sovc-options-list > li.list-item-title {
     font-size: 14px;
     font-weight: 600;

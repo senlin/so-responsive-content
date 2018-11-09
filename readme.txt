@@ -4,7 +4,7 @@ Tags: responsive, content, classes, tablet, smartphone, phone, mobile, desktop, 
 Donate link: https://so-wp.com/donations
 Requires at least: 4.0
 Tested up to: 5.0
-Stable tag: 20181.2.1
+Stable tag: 20181.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -83,6 +83,11 @@ Although possible, **I strongly discourage** using the classes with images. The 
 6. Responsive Content front end small (<768px).
 
 == Changelog ==
+
+= 20181.2.1 =
+
+* November 9, 2018
+* make dismissible admin notices actually work
 
 = 20181.2.1 =
 

@@ -3,7 +3,7 @@
  * Plugin URI: https://so-wp.com/plugin/responsive-content
  * Description: This plugin enables you to show/hide content depending on the device the visitor is browsing from.
  * Author: SO WP
- * Version: 20181.2.1
+ * Version: 20181.2.2
  * Author URI: https://so-wp.com
  * Text Domain: so-visibility-classes
  * Domain Path: /languages
@@ -34,6 +34,9 @@
  */
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
+require  __DIR__ . '/vendor/persist-admin-notices-dismissal/persist-admin-notices-dismissal.php';
+add_action( 'admin_init', array( 'PAnD', 'init' ) );
+
 /**
  * Set-up Action and Filter Hooks
  *
@@ -56,9 +59,12 @@ $nongb_version = '4.9.8';
 
 // conditional that checks we're higher than WP 4.9.8 and the Classic Editor plugin is not active
 if ( version_compare( $wp_version, $nongb_version, '>' ) && ! function_exists( 'classic_editor_init_actions' ) ) {
+
 	add_action( 'admin_notices', 'sovc_admin_notice__warning' );
+
 }
 
+// conditional that checks whether ClassicPress has been installed
 if ( function_exists( 'classicpress_version' ) ) {
 
 	add_action( 'admin_notices', 'sovc_admin_notice__info' );
@@ -68,10 +74,14 @@ if ( function_exists( 'classicpress_version' ) ) {
 
 function sovc_admin_notice__warning() {
 
-	$screen = get_current_screen();
-	if ( $screen->base === 'settings_page_so-responsive-content/so-visibility-classes' ) {
+	if ( ! PAnD::is_admin_notice_active( 'disable-done-notice-forever' ) ) {
+		return;
+	}
 
-		echo '<div class="notice sovc-notice notice-warning is-dismissible">';
+	$screen = get_current_screen();
+	if ( $screen->base === 'settings_page_so-responsive-content/so-visibility-classes' || $screen->base === 'settings_page_so-visibility-classes/so-visibility-classes' ) {
+
+		echo '<div data-dismissible="disable-done-notice-forever" class="notice sovc-notice notice-warning is-dismissible">';
 		printf(
 			'<p><strong>' .
 			__( '[Attention]', 'so-visibility-classes' ) .
@@ -91,10 +101,14 @@ function sovc_admin_notice__warning() {
 
 function sovc_admin_notice__info() {
 
-	$screen = get_current_screen();
-	if ( $screen->base === 'settings_page_so-responsive-content/so-visibility-classes' ) {
+	if ( ! PAnD::is_admin_notice_active( 'disable-done-notice-forever' ) ) {
+		return;
+	}
 
-		echo '<div class="notice notice-info is-dismissible">';
+	$screen = get_current_screen();
+	if ( $screen->base === 'settings_page_so-responsive-content/so-visibility-classes' || $screen->base === 'settings_page_so-visibility-classes/so-visibility-classes' ) {
+
+		echo '<div data-dismissible="disable-done-notice-forever" class="notice notice-info is-dismissible">';
 		echo '<p><strong>' . __( '[FYI]', 'so-visibility-classes' ) . ' </strong>' . __( 'The Responsive Content plugin is perfectly suitable for use on ClassicPress!', 'so-visibility-classes' ) . '</p>';
 		echo '</div>';
 
@@ -299,7 +313,7 @@ function sovc_render_form() { ?>
 function sovc_plugin_action_links( $links, $file ) {
 
 	if ( $file == plugin_basename( __FILE__ ) ) {
-		$sovc_links = '<a href="' . get_admin_url() . 'options-general.php?page=so-responsive-content/so-visibility-classes.php">' . __( 'Read before using', 'so-visibility-classes' ) . '</a>';
+		$sovc_links = '<a href="' . get_admin_url() . 'options-general.php?page=so-visibility-classes/so-visibility-classes.php">' . __( 'Read before using', 'so-visibility-classes' ) . '</a>';
 		// make the 'Settings' link appear first
 		array_unshift( $links, $sovc_links );
 	}

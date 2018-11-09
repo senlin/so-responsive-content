@@ -56,6 +56,12 @@ This repo is open to _any_ kind of contributions.
 
 ## Changelog
 
+### 1.2.2
+
+* November 9, 2018
+* make dismissible admin notices actually work
+* WP.org version 20181.2.2
+
 ### 1.2.1
 
 * November 9, 2018

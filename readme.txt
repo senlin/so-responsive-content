@@ -84,7 +84,7 @@ Although possible, **I strongly discourage** using the classes with images. The 
 
 == Changelog ==
 
-= 20181.2.1 =
+= 20181.2.2 =
 
 * November 9, 2018
 * make dismissible admin notices actually work

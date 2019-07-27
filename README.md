@@ -1,7 +1,7 @@
 Responsive Content
 =====================
 
-[![plugin version](https://img.shields.io/wordpress/plugin/v/so-visibility-classes.svg)](https://wordpress.org/plugins/so-visibility-classes)[![WP compatibility](https://plugintests.com/plugins/so-visibility-classes/wp-badge.svg)](https://plugintests.com/plugins/so-visibility-classes/latest)[![PHP compatibility](https://plugintests.com/plugins/so-visibility-classes/php-badge.svg)](https://plugintests.com/plugins/so-visibility-classes/latest)
+[![plugin version](https://img.shields.io/wordpress/plugin/v/so-visibility-classes.svg)](https://wordpress.org/plugins/so-visibility-classes) [![WP compatibility](https://plugintests.com/plugins/so-visibility-classes/wp-badge.svg)](https://plugintests.com/plugins/so-visibility-classes/latest) [![PHP compatibility](https://plugintests.com/plugins/so-visibility-classes/php-badge.svg)](https://plugintests.com/plugins/so-visibility-classes/latest)
 
 ###### Last updated on November 9, 2018
 ###### requires at least WordPress 4.0

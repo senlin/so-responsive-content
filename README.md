@@ -1,12 +1,12 @@
 Responsive Content
 =====================
 
-[![plugin version](https://img.shields.io/wordpress/plugin/v/so-visibility-classes.svg)](https://wordpress.org/plugins/so-visibility-classes)
+[![plugin version](https://img.shields.io/wordpress/plugin/v/so-visibility-classes.svg)](https://wordpress.org/plugins/so-visibility-classes)[![WP compatibility](https://plugintests.com/plugins/so-visibility-classes/wp-badge.svg)](https://plugintests.com/plugins/so-visibility-classes/latest)[![PHP compatibility](https://plugintests.com/plugins/so-visibility-classes/php-badge.svg)](https://plugintests.com/plugins/so-visibility-classes/latest)
 
 ###### Last updated on November 9, 2018
 ###### requires at least WordPress 4.0
-###### tested up to WordPress 5.0
-###### tested up to ClassicPress 1.0.0
+###### tested up to WordPress 5.2.2
+###### tested up to ClassicPress 1.0.1
 ###### Author: [Pieter Bos](https://github.com/senlin)
 ###### [Stable Version](https://wordpress.org/plugins/so-visibility-classes) (via WordPress Plugins Repository)
 ###### [Plugin homepage](https://so-wp.com/plugin/responsive-content)
@@ -19,7 +19,7 @@ More information about Background, Implementation and Usage available via the [W
 
 ### Is this plugin compatible with the new editor of WP 5.0 (codenamed Gutenberg)?
 
-The plugin works on WP 5.0, but only on a Classic Block. Alternatively we would like to suggest to either using the [Classic Editor](https://wordpress.org/plugins/classic-editor-addon/) or to install [ClassicPress](https://www.classicpress.net) once it is released.
+The plugin works on WP 5.0, but only on a Classic Block. Alternatively we would like to suggest to either using the [Classic Editor](https://wordpress.org/plugins/classic-editor-addon/) or to install [ClassicPress](https://www.classicpress.net).
 
 ### I have an issue with this plugin, where can I get support?
 
